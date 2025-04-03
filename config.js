@@ -41,19 +41,19 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'Redlining-D-grade',
-                    opacity: 1,
+                    opacity: 0.8,
                 },
                 {
                     layer: 'Redlining-C-grade',
-                    opacity: 1,
+                    opacity: 0.8,
                 },
                 {
                     layer: 'Redlining-B-grade',
-                    opacity: 1,
+                    opacity: 0.8,
                 },
                 {
                     layer: 'Redlining-A-grade',
-                    opacity: 1,
+                    opacity: 0.8,
                 },
                 {
                     layer: 'RSE-lowest',
