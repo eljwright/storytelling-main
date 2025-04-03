@@ -40,10 +40,12 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'RSE-lowest',
+                    layer: 'Redlining-D-grade',
+                    layer: 'Redlining-C-grade',
+                    layer: 'Redlining-B-grade',
+                    layer: 'Redlining-A-grade',
                     opacity: 1,
-                    duration: 5000
-                }
+                },
             ],
             onChapterExit: [
                 {
