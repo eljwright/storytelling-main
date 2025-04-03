@@ -74,7 +74,7 @@ var config = {
                 {
                     layer: 'RSE-highest',
                     opacity: 0,
-                }
+                },
             ],        
             onChapterExit: []
         },
