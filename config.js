@@ -63,6 +63,18 @@ var config = {
                     layer: 'RSE-second-lowest',
                     opacity: 0,
                 },
+                {
+                    layer: 'RSE-middle',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-highest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-highest',
+                    opacity: 0,
+                },
             ],        
             onChapterExit: [],
         },
