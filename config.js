@@ -55,6 +55,26 @@ var config = {
                     layer: 'Redlining-A-grade',
                     opacity: 1,
                 },
+                {
+                    layer: 'RSE-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-middle',
+                    opacity 0,
+                },
+                {
+                    layer: 'RSE-second-highest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-highest',
+                    opacity: 0,
+                },
             ],        
             onChapterExit: [],
         },

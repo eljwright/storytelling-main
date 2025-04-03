@@ -47,5 +47,5 @@ location: {
         {
             layer: 'RSE-highest',
             opacity: 0,
-        }
+        },
     ],
