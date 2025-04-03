@@ -41,9 +41,6 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'Redlining-D-grade',
-                    layer: 'Redlining-C-grade',
-                    layer: 'Redlining-B-grade',
-                    layer: 'Redlining-A-grade',
                     opacity: 1,
                 },
             ],
