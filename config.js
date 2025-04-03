@@ -77,9 +77,10 @@ var config = {
                 },
             ],        
             onChapterExit: [
-                layer: 'Redlining-A-grade,
-                opacity: 0
-         ],   
+                {
+                    layer: 'Redlining-A-grade,
+                },
+         ], 
         },
         {
             id: 'chapter-two',
