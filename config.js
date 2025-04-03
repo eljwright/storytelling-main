@@ -78,7 +78,7 @@ var config = {
             ],        
             onChapterExit: [
                 {
-                    layer: 'Redlining-A-grade,
+                    layer: 'Redlining-A-grade',
                 },
          ], 
         },
