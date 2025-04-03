@@ -76,7 +76,7 @@ var config = {
                     opacity: 0,
                 },
             ],        
-            onChapterExit: []
+            onChapterExit: [],
         },
         {
             id: 'chapter-two',
