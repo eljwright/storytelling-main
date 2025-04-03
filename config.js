@@ -58,7 +58,7 @@ var config = {
                 {
                     layer: 'Redlining-Busi',
                     opacity: 1,
-                }
+                },
                 {
                     layer: 'RSE-lowest',
                     opacity: 0,
