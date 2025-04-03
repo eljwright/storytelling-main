@@ -27,5 +27,5 @@ location: {
         {
             layer: 'Redlining-A-grade',
             opacity: 1,
-        }
+        },
     ],
