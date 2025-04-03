@@ -49,8 +49,9 @@ onChapterEnter: [
             opacity: 0,
         },
     ],
- onChapterExit: [
+onChapterExit: [
         {
-            layer: 'Redlining-A-grade,
+            layer: 'Redlining-A-grade',
+            opacity: 0,
         },
- ],   
+    ], 
