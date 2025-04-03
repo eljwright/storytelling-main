@@ -11,7 +11,7 @@ location: {
         pitch: 60,
         bearing: 0
     },
-    onChapterEnter: [
+onChapterEnter: [
         {
             layer: 'Redlining-D-grade',
             opacity: 1,
@@ -38,7 +38,7 @@ location: {
         },
         {
             layer: 'RSE-middle',
-            opacity 0,
+            opacity: 0,
         },
         {
             layer: 'RSE-second-highest',
@@ -49,3 +49,4 @@ location: {
             opacity: 0,
         },
     ],
+ onChapterExit: [],   
