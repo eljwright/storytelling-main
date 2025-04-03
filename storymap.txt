@@ -14,9 +14,18 @@ location: {
     onChapterEnter: [
         {
             layer: 'Redlining-D-grade',
-            layer: 'Redlining-C-grade',
-            layer: 'Redlining-B-grade',
-            layer: 'Redlining-A-grade',
             opacity: 1,
         },
+        {
+            layer: 'Redlining-C-grade',
+            opacity: 1,
+        },
+        {
+            layer: 'Redlining-B-grade',
+            opacity: 1,
+        },
+        {
+            layer: 'Redlining-A-grade',
+            opacity: 1,
+        }
     ],

@@ -43,6 +43,7 @@ var config = {
                     layer: 'Redlining-D-grade',
                     opacity: 1,
                 },
+                
             ],
             onChapterExit: [
                 {
