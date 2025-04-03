@@ -30,7 +30,7 @@ var config = {
             image: '',
             description: 'The history of segregation in American cities is one with deep roots and multiple different stories. This interactive mapping website will evaluate the way one specific practice known as redlining significantly contributed to socio-spatial inequality within Seattle, Washington. We will also consider the ways in which it still impacts communities to this day.',
             location: {
-                center: [-122.33869, 47.59194],
+                center: [-122.33801, 47.58612],
                 zoom: 10.5,
                 pitch: 20,
                 bearing: 0
