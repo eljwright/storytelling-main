@@ -56,12 +56,7 @@ var config = {
                     opacity: 1,
                 },
             ],
-            onChapterExit: [
-                {
-                    layer: 'RSE-lowest',
-                    opacity: 0
-                }
-            ]
+            onChapterExit: []
         },
         {
             id: 'chapter-two',
