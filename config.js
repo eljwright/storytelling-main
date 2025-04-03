@@ -59,6 +59,10 @@ var config = {
                     layer: 'RSE-lowest',
                     opacity: 0,
                 },
+                {
+                    layer: 'RSE-second-lowest',
+                    opacity: 0,
+                },
             ],        
             onChapterExit: [],
         },
