@@ -176,8 +176,8 @@ var config = {
             image: '',
             description: 'Neighborhoods with non-white residents, such as the Central District which was majority Black, often had area descriptions that only described the race of the residents and nothing else. D4 area description: “This is a negro area of Seattle”. This area description is notably much shorter than those in white neighborhoods (such as A3). They didn’t describe the quality of the houses at all and decided that because it was a Black neighborhood, that was a good enough reason to grade it as “hazardous”. This demonstrates the significant disparity between how redlining grades were determined between white and non-white neighborhoods and how heavily racialized they were.',
             location: {
-                center: [-122.30179, 47.61788],
-                zoom: 12,
+                center: [-122.30198, 47.61785],
+                zoom: 13,
                 pitch: 15,
                 bearing: 0
             },
