@@ -94,9 +94,9 @@ var config = {
             image: '',
             description: 'To understand the practice of and impacts of redlining, we must first understand the historical context. In the aftermath of the Great Depression, president Franklin Delano Roosevelt (FDR) started implementing what he called New Deal programs. These programs aimed to create social safety nets and promote economic recovery after the depression. As part of the New Deal, FDR established the Homeowners Loan Corporation (HOLC) and the Federal Housing Administration (FHA) to try and make homeownership more accessible for Americans. Once created the FHA helped standardize the 30 year mortgage and cemented homeownership as a central part of the “American Dream”.',
             location: {
-                center: [-122.341919, 47.598645],
-                zoom: 10,
-                pitch: 60,
+                center: [-122.41998, 47.59141],
+                zoom: 10.45,
+                pitch: 15,
                 bearing: 0
                 // flyTo additional controls-
                 // These options control the flight curve, making it move
@@ -106,7 +106,7 @@ var config = {
                 //curve: 1, // change the speed at which it zooms out
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
@@ -119,9 +119,9 @@ var config = {
             image: '',
             description:'Meanwhile the HOLC, worried about taking on risky loans, made color-coded maps to assess the riskiness of granting home loans in different neighborhoods. They created four different categories that they would rank neighborhoods into.',
             location: {
-                center: [-122.341919, 47.598645],
-                zoom: 10,
-                pitch: 60,
+                center: [-122.41998, 47.59141],
+                zoom: 10.45,
+                pitch: 15,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -135,12 +135,31 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Racial component of HOLC grades',
-            image: './images/Seattle_HOLC_Racial_Map.jpg',
-            description: 'Buenos Aires, the capital of Argentina, is a dynamic city known for its European-inspired architecture, vibrant tango culture, and rich culinary scene. Often called the "Paris of South America," it blends historic charm with modern energy.  You can add as many chapters as you need, just copy the JSON data and make changes.',
+            image: '',
+            description: 'Although the HOLC maps were supposed to be about economic stability and who would be able to pay off their loans in the future, racial demographics were undeniably a major factor in what grade a neighborhood would receive. White neighborhoods were typically classified as “Best”, but if even one Black family lived there, the neighborhood would be determined to be “Definitely Declining” or “Hazardous”. This is especially noticeable when you review the area descriptions that were written to inform the grades. For example, in Tacoma, WA there was an area that was identical to the surrounding B graded area but got a D grade because as the area description noted “three highly respected Negro families own homes in the middle lock of the area” and “their presence seriously detracts from the desirability of their immediate neighborhood”. The following Seattle area descriptions will also show the significant difference in how neighborhoods were categorized.',
             location: {
-                center: [-122.341919, 47.598645],
-                zoom: 10,
-                pitch: 60,
+                center: [-122.41998, 47.59141],
+                zoom: 10.45,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'chapter-four-a',
+            alignment: 'right',
+            hidden: false,
+            title: 'Area Description: Zone A3',
+            image: '',
+            description: 'Non-white neighborhoods, such as this one in modern-day Laurelhurst, often had long and detailed descriptions of the quality of the houses and other factors affecting the neighborhood. A3 area description:“This area is one of the most popular residential districts in Seattle. The residents are of the professional class, having an annual income of $4000 to $10,000 per year. There is very choice view property in this area. The homes, generally, are less than to years old-- in the $6500 to $15,000 price class; and well maintained. During 1935 there were some new residential structures placed under construction in this area. The property is protected by building and racial restrictions.”',
+            location: {
+                center: [-122.27079, 47.65791],
+                zoom: 13.5,
+                pitch: 15,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
