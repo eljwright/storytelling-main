@@ -132,7 +132,7 @@ var config = {
         },
         {
             id: 'chapter-four',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             title: 'Racial component of HOLC grades',
             image: './images/Seattle_HOLC_Racial_Map.jpg',
