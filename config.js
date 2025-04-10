@@ -73,23 +73,23 @@ var config = {
                 },
                 {
                     layer: 'RSE-lowest',
-                    opacity: 0,
+                    opacity: 1,
                 },
                 {
                     layer: 'RSE-second-lowest',
-                    opacity: 0,
+                    opacity: 1,
                 },
                 {
                     layer: 'RSE-middle',
-                    opacity: 0,
+                    opacity: 1,
                 },
                 {
                     layer: 'RSE-second-highest',
-                    opacity: 0,
+                    opacity: 1,
                 },
                 {
                     layer: 'RSE-highest',
-                    opacity: 0,
+                    opacity: 1,
                 },
             ],        
             onChapterExit: [], 
