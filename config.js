@@ -216,7 +216,12 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
+            onChapterEnter: [
+                {
+                    layer: 'Racial_Georef',
+                    opacity: 1,
+                }
+            ],
             onChapterExit: []
         }
     ]
