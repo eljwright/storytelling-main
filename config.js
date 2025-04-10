@@ -41,7 +41,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'Redlining_Georef',
-                    opacity: 1,
+                    opacity: 0,
                 },
                 {
                     layer: 'Racial_Georef',
@@ -73,7 +73,7 @@ var config = {
                 },
                 {
                     layer: 'RSE-lowest',
-                    opacity: 0,
+                    opacity: 1,
                 },
                 {
                     layer: 'RSE-second-lowest',
