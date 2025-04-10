@@ -73,7 +73,7 @@ var config = {
                 },
                 {
                     layer: 'RSE-lowest',
-                    opacity: 1,
+                    opacity: 0,
                 },
                 {
                     layer: 'RSE-second-lowest',
