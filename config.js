@@ -40,28 +40,36 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
+                    layer: 'Redlining_Georef',
+                    opacity: 1,
+                },
+                {
+                    layer: 'Racial_Georef',
+                    opacity: 0,
+                },
+                {
                     layer: 'Redlining-D-grade',
-                    opacity: 0.8,
+                    opacity: 0,
                 },
                 {
                     layer: 'Redlining-C-grade',
-                    opacity: 0.8,
+                    opacity: 0,
                 },
                 {
                     layer: 'Redlining-B-grade',
-                    opacity: 0.8,
+                    opacity: 0,
                 },
                 {
                     layer: 'Redlining-A-grade',
-                    opacity: 0.8,
+                    opacity: 0,
                 },
                 {
                     layer: 'Redlining-Indus',
-                    opacity: 0.8,
+                    opacity: 0,
                 },
                 {
                     layer: 'Redlining-Busi',
-                    opacity: 0.8,
+                    opacity: 0,
                 },
                 {
                     layer: 'RSE-lowest',
