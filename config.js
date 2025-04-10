@@ -125,7 +125,7 @@ var config = {
             hidden: false,
             title: 'Redlining Map Overview',
             image: '',
-            description:'Meanwhile the HOLC, worried about taking on risky loans, made color-coded maps to assess the riskiness of granting home loans in different neighborhoods. They created four different categories that they would rank neighborhoods into.',
+            description:'Meanwhile the HOLC, worried about taking on risky loans, made color-coded maps to assess the riskiness of granting home loans in different neighborhoods. They created four different categories that they would rank neighborhoods into. <br><br> These grades were: <br> <p style="color:green;">A: Best - Green</p><br> <p style="color:blue;">B: Still Desirable - Blue</p><br> <p style="color:yellow;">C: Definitely Declining - Yellow</p><br> <p style="color:red;">D: Hazardous - Red</p>',
             location: {
                 center: [-122.41998, 47.59141],
                 zoom: 10.45,
