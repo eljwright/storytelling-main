@@ -41,7 +41,7 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'Redlining_Georef',
-                    opacity: 0,
+                    opacity: 1,
                 },
                 {
                     layer: 'Racial_Georef',
@@ -73,23 +73,23 @@ var config = {
                 },
                 {
                     layer: 'RSE-lowest',
-                    opacity: 1,
+                    opacity: 0,
                 },
                 {
                     layer: 'RSE-second-lowest',
-                    opacity: 1,
+                    opacity: 0,
                 },
                 {
                     layer: 'RSE-middle',
-                    opacity: 1,
+                    opacity: 0,
                 },
                 {
                     layer: 'RSE-second-highest',
-                    opacity: 1,
+                    opacity: 0,
                 },
                 {
                     layer: 'RSE-highest',
-                    opacity: 1,
+                    opacity: 0,
                 },
             ],        
             onChapterExit: [], 
@@ -193,7 +193,12 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [
+                {
+                    layer: 'HOLC_Georef',
+                    opacity: 0,
+                }
+            ]
         },
         {
             id: 'chapter-four-c',
