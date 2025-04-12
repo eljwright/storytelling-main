@@ -223,6 +223,46 @@ var config = {
                 }
             ],
             onChapterExit: []
+        },
+        {
+            id: 'chapter-five',
+            alignment: 'left',
+            hidden: false,
+            title: 'Introduction to the Impact of Redlining',
+            description: 'As previously mentioned, redlining severely impacted the individuals and families who were in the C and D graded areas. These categories meant that people in those areas deemed as “definitely declining” or “hazardous” could not get mortgage loans or if they did manage to secure a loan, got highly unfavorable conditions. This prevented them from building generational wealth in the form of home equity, which has had major impacts that are still impacting these communities today.',
+            image: '',
+            location: {
+                center: [-122.41998, 47.59141],
+                zoom: 10.45,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'Racial_Georef',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining_A_Grade',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining_B_Grade',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining_Busi',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining_Indus',
+                    opacity: 0,
+                }
+            ],
+            onChapterExit: []
         }
     ]
 };
