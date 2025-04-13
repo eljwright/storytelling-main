@@ -28,7 +28,7 @@ var config = {
             hidden: false,
             title: 'Introduction',
             image: '',
-            description: 'The history of segregation in American cities is one with deep roots and multiple different stories. This interactive mapping website will evaluate the way one specific practice known as redlining significantly contributed to socio-spatial inequality within Seattle, Washington. We will also consider the ways in which it still impacts communities to this day.',
+            description: 'The history of segregation in Seattle, Washington is one with deep roots and multiple different stories. The city was founded on exclusionary bases, with legislation that expelled the native Duwamish people from residing within city limits. These segregationist roots persisted throughout the decades, with many explicit anti-Asian and anti-Black policies being enacted in the 19th and 20th centuries. This interactive mapping website will evaluate the way one specific practice known as redlining significantly contributed to socio-spatial inequality within Seattle, Washington. We will also consider the ways in which it still impacts communities to this day.',
             location: {
                 center: [-122.41998, 47.59141],
                 zoom: 10.45,
