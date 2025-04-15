@@ -496,11 +496,30 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Gentrification and Displacement',
-            description: 'The gov isnt the only one responsible but also corporations/seattle tech boom. Seattle is the 3rd most gentrifying US city (2019 stat)',
+            description: 'The gov isnt the only one responsible but also corporations/seattle tech boom. Seattle is the 3rd most gentrifying US city (2019 stat)<br><br> Even for people who can still afford to rent in their neighborhood as it gentrifies, rising housing prices often make it impossible for them to buy a home. This perpetuates the same trends that redlining caused in the first place, keeping homeownership firmly out of reach for many Seattlites.',
             image: '',
             location: {
                 center: [-122.41998, 47.59141],
                 zoom: 10.45,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-ten-a',
+            alignment: 'right',
+            hidden: false,
+            title: 'Gentrification: Rainier Valley',
+            description: 'TOD and risk of modern investment in historically disinvested areas. Resident quote. Home prices stat.',
+            image: '',
+            location: {
+                center: [-122.28854, 47.54721],
+                zoom: 12.15,
                 pitch: 15,
                 bearing: 0
             },
