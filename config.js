@@ -477,10 +477,30 @@ var config = {
             hidden: false,
             title: 'Disinvestment: Central District',
             description: 'Banks took money from residents and invested it into white suburbs (Redlining and Disinvestment Report)<br><br><img src="/images/Redlining_Song.jpg" alt="Redlining Anthem" width="75" height="200">',
+            //Make image clickable so people can zoom into it
             image: '',
             location: {
                 center: [-122.30282, 47.60642],
                 zoom: 13,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-ten',
+            alignment: 'left',
+            hidden: false,
+            title: 'Gentrification and Displacement',
+            description: 'The gov isnt the only one responsible but also corporations/seattle tech boom. Seattle is the 3rd most gentrifying US city (2019 stat)',
+            image: '',
+            location: {
+                center: [-122.41998, 47.59141],
+                zoom: 10.45,
                 pitch: 15,
                 bearing: 0
             },
