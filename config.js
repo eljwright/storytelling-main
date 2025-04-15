@@ -374,7 +374,7 @@ var config = {
             hidden: false,
             title: 'Legislation and Modern Impacts',
             description: 'Although redlining was finally outlawed at the federal level and local levels in 1968 with the Fair Housing Act and Fair Housing Ordinance (Ordinance 96619) respectively, elements of the practice persisted for several years. In 1975 the Central Seattle Community Council Federation published a report titled Redlining and Disinvestment in Central Seattle that outlined how even after this legislation, residents of the Central District, a redlined zone, still faced major barriers to receiving home loans. After this report was published, several local government initiatives were undertaken as an attempt to reverse the effects of redlining, these include Seattle’s Reinvestment Task Force (established 1975) and the Lenders Review Board (est 1976). <br><br><img src="/images/Lenders_Review_Board.jpg" alt="ad promoting the lenders review board" width="50" height="200"><br><br>Despite efforts from the city government, redlining still has a mjaor impact on Seattle today. Its legacy can be seen across many areas of inequality, including income, health, education and employment, among many others. In the following sections, we’ll look more closely at how these impacts show up in different parts of the city.',
-            image: '/images/Lenders_Review_Board.jpg',
+            image: '',
             location: {
                 center: [-122.41998, 47.59141],
                 zoom: 10.45,
