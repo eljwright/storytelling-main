@@ -208,7 +208,7 @@ var config = {
             description: 'Another example that showcases the clear racist nature of the redlining map was that in addition to the loan security map, the HOLC also created a racial map that showed the areas certain ethnicities were the most present in. In addition to showing where certain racial groups lived, the HOLC racial map also included arrows that showed the “direction of infiltration” of those groups. This is likely a direct reference to the FHA’s Underwriting Manual which warned housing developers, without sufficient evidence, that property values would be threatened by the “infiltration of inharmonious racial groups”. This map was submitted on the same day and by the same HOLC field agent as the mortgage security redlining map, and is a clear demonstration that the HOLC was always considering racial factors in their maps.',
             image: '',
             location: {
-                center: [-122.41998, 47.59141],
+                center: [-122.30497, 47.59141],
                 zoom: 10.45,
                 pitch: 15,
                 bearing: 0
@@ -414,7 +414,7 @@ var config = {
             description: 'To better understand how redlining continues to shape Seattle today, we will now look at the city’s Racial and Social Equity Index, specifically focusing on the socioeconomic subindex. This map shows the census tracts that the city deemed to be the most economically disadvantaged, classifications determined by a combination of income and educational attainment data.<br><br><b>Map Legend:</b>',
             image: '',
             location: {
-                center: [-122.30945, 47.60724],
+                center: [-122.30497, 47.59141],
                 zoom: 10.45,
                 pitch: 15,
                 bearing: 0
@@ -422,6 +422,27 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
+            // On ch enter have RSE socioeconomic map appear
+            onChapterEnter: [],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-eight-b',
+            alignment: 'right',
+            hidden: false,
+            title: 'Economic Impact: Central District',
+            description: 'Zooming into the historically redlined Central District, including zone D4 that we looked at earlier, shows that much of the area is now part of census tracts with some of the highest levels of economic inequality in Seattle. This pattern is largely the result of past housing discrimination like redlining, which denied families the opportunity to build and pass down generational wealth, a key factor in long term economic opportunity.',
+            image: '',
+            location: {
+                center: [-122.29692, 47.61785],
+                zoom: 13.25,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            // RSE SOCIOECONOMIC MAP!!!
             onChapterEnter: [],
             onChapterExit: [],
         },
