@@ -446,5 +446,30 @@ var config = {
             onChapterEnter: [],
             onChapterExit: [],
         },
+        {
+            id: 'chapter-nine',
+            alignment: 'left',
+            hidden: false,
+            title: 'Disinvestment and Neighborhood Deterioration',
+            description: 'Redlining became a self-fulfilling prophecy. Redlining and Disvestment in Central Seattle Report <br><br><img src="/images/Redlining_and_Disinvestment.jpg" alt="image of the cover of the Redlining and Disinvestment in Central Seattle Report" width="100" height="200">',
+            image: '',
+            location: {
+                center: [-122.41998, 47.59141],
+                zoom: 10.45,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            // RSE SOCIOECONOMIC MAP LEAVES - back to georeferenced redlining map
+            onChapterEnter: [
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [],
+        },
     ]
 };
