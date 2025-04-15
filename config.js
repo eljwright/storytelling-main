@@ -434,8 +434,8 @@ var config = {
             description: 'Zooming into the historically redlined Central District, including zone D4 that we looked at earlier, shows that much of the area is now part of census tracts with some of the highest levels of economic inequality in Seattle. This pattern is largely the result of past housing discrimination like redlining, which denied families the opportunity to build and pass down generational wealth, a key factor in long term economic opportunity.',
             image: '',
             location: {
-                center: [-122.29692, 47.61785],
-                zoom: 13.25,
+                center: [-122.30282, 47.60642],
+                zoom: 13,
                 pitch: 15,
                 bearing: 0
             },
