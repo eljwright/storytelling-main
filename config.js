@@ -242,25 +242,129 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
+                    layer: 'Redlining_Georef',
+                    opacity: 1,
+                },
+                {
                     layer: 'Racial_Georef',
                     opacity: 0,
                 },
                 {
-                    layer: 'Redlining_A_Grade',
+                    layer: 'Redlining-D-grade',
                     opacity: 0,
                 },
                 {
-                    layer: 'Redlining_B_Grade',
+                    layer: 'Redlining-C-grade',
                     opacity: 0,
                 },
                 {
-                    layer: 'Redlining_Busi',
+                    layer: 'Redlining-B-grade',
                     opacity: 0,
                 },
                 {
-                    layer: 'Redlining_Indus',
+                    layer: 'Redlining-A-grade',
                     opacity: 0,
-                }
+                },
+                {
+                    layer: 'Redlining-Indus',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-Busi',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-middle',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-highest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-highest',
+                    opacity: 0,
+                },
+            ],
+            onChapterExit: []
+        },
+        {
+            id: 'chapter-six',
+            alignment: 'center',
+            hidden: false,
+            title: 'Community Resistance',
+            description: 'Before going into detail on the enduring legacy of redlining within Seattle, we will look at the history of legislation and community resistance to redlining <br> Summer of 1963!! (locally and nationally)<br> <img src="storytelling-main/images/Sit-in_1.jpg" alt="Protesters organize a sit-in in the Mayors office" width="200" height="150">',
+            image: '',
+            location: {
+                center: [-122.41998, 47.59141],
+                zoom: 10.45,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 1,
+                },
+                {
+                    layer: 'Racial_Georef',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-D-grade',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-C-grade',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-B-grade',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-A-grade',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-Indus',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-Busi',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-middle',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-highest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-highest',
+                    opacity: 0,
+                },
             ],
             onChapterExit: []
         }
