@@ -451,7 +451,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Disinvestment and Neighborhood Deterioration',
-            description: 'Redlining became a self-fulfilling prophecy. Redlining and Disvestment in Central Seattle Report <br><br><img src="/images/Redlining_and_Disinvestment.jpg" alt="image of the cover of the Redlining and Disinvestment in Central Seattle Report" width="100" height="200">',
+            description: 'Redlining became a self-fulfilling prophecy. Redlining and Disvestment in Central Seattle Report <br><br><img src="/images/Redlining_and_Disinvestment.jpg" alt="image of the cover of the Redlining and Disinvestment in Central Seattle Report" width="75" height="200">',
             image: '',
             location: {
                 center: [-122.41998, 47.59141],
@@ -469,6 +469,25 @@ var config = {
                     opacity: 1,
                 },
             ],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-nine-a',
+            alignment: 'right',
+            hidden: false,
+            title: 'Disinvestment: Central District',
+            description: 'Banks took money from residents and invested it into white suburbs (Redlining and Disinvestment Report)<br><br><img src="/images/Redlining_Song.jpg" alt="Redlining Anthem" width="75" height="200">',
+            image: '',
+            location: {
+                center: [-122.30282, 47.60642],
+                zoom: 13,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
             onChapterExit: [],
         },
     ]
