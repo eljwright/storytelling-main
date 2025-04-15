@@ -117,7 +117,7 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
         },
         {
             id: 'chapter-three',
@@ -136,7 +136,7 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
         },
         {
             id: 'chapter-four',
@@ -155,7 +155,7 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
         },
         {
             id: 'chapter-four-a',
@@ -174,7 +174,7 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
         },
         {
             id: 'chapter-four-b',
@@ -198,7 +198,7 @@ var config = {
                     layer: 'HOLC_Georef',
                     opacity: 0,
                 }
-            ]
+            ],
         },
         {
             id: 'chapter-four-c',
@@ -222,7 +222,7 @@ var config = {
                     opacity: 1,
                 }
             ],
-            onChapterExit: []
+            onChapterExit: [],
         },
         {
             id: 'chapter-five',
@@ -294,7 +294,7 @@ var config = {
                     opacity: 0,
                 },
             ],
-            onChapterExit: []
+            onChapterExit: [],
         },
         {
             id: 'chapter-six',
@@ -366,7 +366,26 @@ var config = {
                     opacity: 0,
                 },
             ],
-            onChapterExit: []
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-six',
+            alignment: 'full',
+            hidden: false,
+            title: 'Community Resistance',
+            description: 'Before going into detail on the enduring legacy of redlining within Seattle, we will look at the history of legislation and community resistance to redlining <br> Summer of 1963!! (locally and nationally)<br><img src="images/Sit-in_1.jpg" alt="July 1 1963 sit-in" width="50" height="200">',
+            image: '',
+            location: {
+                center: [-122.41998, 47.59141],
+                zoom: 10.45,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: [],
         }
     ]
 };
