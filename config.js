@@ -414,7 +414,7 @@ var config = {
             description: 'To better understand how redlining continues to shape Seattle today, we will now look at the city’s Racial and Social Equity Index, specifically focusing on the socioeconomic subindex. This map shows the census tracts that the city deemed to be the most economically disadvantaged, classifications determined by a combination of income and educational attainment data.<br><br><b>Map Legend:</b>',
             image: '',
             location: {
-                center: [-122.41998, 47.59141],
+                center: [-122.30945, 47.60724],
                 zoom: 10.45,
                 pitch: 15,
                 bearing: 0
