@@ -96,7 +96,7 @@ var config = {
         },
         {
             id: 'chapter-two',
-            alignment: 'full',
+            alignment: 'center',
             hidden: false,
             title: 'Federal Context',
             image: '',
@@ -298,7 +298,7 @@ var config = {
         },
         {
             id: 'chapter-six',
-            alignment: 'center',
+            alignment: 'full',
             hidden: false,
             title: 'Community Resistance',
             description: 'Before going into detail on the enduring legacy of redlining within Seattle, we will look at the history of legislation and community resistance to redlining <br> Summer of 1963!! (locally and nationally)<br><img src="images/Sit-in_1.jpg" alt="July 1 1963 sit-in" width="50" height="200">',
