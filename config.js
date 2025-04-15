@@ -202,7 +202,7 @@ var config = {
         },
         {
             id: 'chapter-four-c',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'HOLC Racial Map',
             description: 'Another example that showcases the clear racist nature of the redlining map was that in addition to the loan security map, the HOLC also created a racial map that showed the areas certain ethnicities were the most present in. In addition to showing where certain racial groups lived, the HOLC racial map also included arrows that showed the “direction of infiltration” of those groups. This is likely a direct reference to the FHA’s Underwriting Manual which warned housing developers, without sufficient evidence, that property values would be threatened by the “infiltration of inharmonious racial groups”. This map was submitted on the same day and by the same HOLC field agent as the mortgage security redlining map, and is a clear demonstration that the HOLC was always considering racial factors in their maps.',
@@ -393,6 +393,25 @@ var config = {
             hidden: false,
             title: 'Modern Wealth Inequality',
             description: 'One of the most prominent effects of redlining is that it prevented people in redlined neighborhoods from being able to own homes and build generational wealth. This led to enormous wealth gaps that still persist today between those who lived in C and D graded neighborhoods and those who lived in A and B graded neighborhoods. A recent study by ECONorthwest found that without racially discriminatory housing practices (including redlining but also practices such as racial housing covenants and private discrimination) King County’s BIPOC households would hold between $12 and $34 billion in additional wealth today. Additionally they found that each individual Black household in King County would hold between $105,000 to $306,000 in additional wealth today if it weren’t for this racial discrimination in housing. <br><br> These wealth disparities impact more than just finances, they also have a singifacnt influence on things such as access to education or healthcare.',
+            image: '',
+            location: {
+                center: [-122.41998, 47.59141],
+                zoom: 10.45,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-eight-a',
+            alignment: 'right',
+            hidden: false,
+            title: 'RSE Socioeconomic Map',
+            description: 'To better understand how redlining continues to shape Seattle today, we will now look at the city’s Racial and Social Equity Index, specifically focusing on the socioeconomic subindex. This map shows the census tracts that the city deemed to be the most economically disadvantaged, classifications determined by a combination of income and educational attainment data.<br><br><b>Map Legend:</b>',
             image: '',
             location: {
                 center: [-122.41998, 47.59141],
