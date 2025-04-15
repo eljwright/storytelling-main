@@ -301,8 +301,8 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Community Resistance',
-            description: 'Before going into detail on the enduring legacy of redlining within Seattle, we will look at the history of legislation and community resistance to redlining <br> Summer of 1963!! (locally and nationally)<br> <img src="storytelling-main/images/Sit-in_1.jpg" alt="Protesters organize a sit-in in the Mayors office" width="200" height="150">',
-            image: '',
+            description: 'Before going into detail on the enduring legacy of redlining within Seattle, we will look at the history of legislation and community resistance to redlining <br> Summer of 1963!! (locally and nationally)',
+            image: 'Sit-in_1.jpg',
             location: {
                 center: [-122.41998, 47.59141],
                 zoom: 10.45,
