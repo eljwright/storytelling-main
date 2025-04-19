@@ -334,54 +334,9 @@ var config = {
                 {
                     layer: 'Redlining_Georef',
                     opacity: 1,
-                }
-            ],
-            onChapterExit: [],
-        },
-        {
-            id: 'chapter-eight-a',
-            alignment: 'right',
-            hidden: false,
-            title: 'RSE Socioeconomic Map',
-            description: 'To better understand how redlining continues to shape Seattle today, we will now look at the city’s Racial and Social Equity Index, specifically focusing on the socioeconomic subindex. This map shows the census tracts that the city deemed to be the most economically disadvantaged, classifications determined by a combination of income and educational attainment data.<br><br><b>Map Legend:</b>',
-            image: '',
-            location: {
-                center: [-122.30497, 47.59141],
-                zoom: 10.45,
-                pitch: 15,
-                bearing: 0
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            // On ch enter have RSE socioeconomic map appear
-            onChapterEnter: [
-                {
-                    layer: 'Socioecon-highest',
-                    opacity: 0.8,
                 },
                 {
-                    layer: 'Socioecon-second-highest',
-                    opacity: 0.8,
-                },
-                {
-                    layer: 'Socioecon-middle',
-                    opacity: 0.8,
-                },
-                {
-                    layer: 'Socioecon-second-lowest',
-                    opacity: 0.8,
-                },
-                {
-                    layer: 'Socioecon-lowest',
-                    opacity: 0.8
-                },
-                {
-                    layer: 'Redlining_Georef',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Racial_georef',
+                    layer: 'Racial_Georef',
                     opacity: 0,
                 },
                 {
@@ -427,6 +382,51 @@ var config = {
                 {
                     layer: 'Redlining-A-grade',
                     opacity: 0,
+                }
+            ],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-eight-a',
+            alignment: 'right',
+            hidden: false,
+            title: 'RSE Socioeconomic Map',
+            description: 'To better understand how redlining continues to shape Seattle today, we will now look at the city’s Racial and Social Equity Index, specifically focusing on the socioeconomic subindex. This map shows the census tracts that the city deemed to be the most economically disadvantaged, classifications determined by a combination of income and educational attainment data.<br><br><b>Map Legend:</b>',
+            image: '',
+            location: {
+                center: [-122.30497, 47.59141],
+                zoom: 10.45,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            // On ch enter have RSE socioeconomic map appear
+            onChapterEnter: [
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Socioecon-highest',
+                    opacity: 0.8,
+                },
+                {
+                    layer: 'Socioecon-second-highest',
+                    opacity: 0.8,
+                },
+                {
+                    layer: 'Socioecon-middle',
+                    opacity: 0.8,
+                },
+                {
+                    layer: 'Socioecon-second-lowest',
+                    opacity: 0.8,
+                },
+                {
+                    layer: 'Socioecon-lowest',
+                    opacity: 0.8
                 }
             ],
             onChapterExit: [],
