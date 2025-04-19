@@ -46,6 +46,50 @@ var config = {
                 {
                     layer: 'Racial_georef',
                     opacity: 0,
+                },
+                {
+                    layer: 'RSE-highest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-highest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-middle',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-Busi',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-Indus',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-D-grade',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-C-grade',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-B-grade',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining-A-grade',
+                    opacity: 0,
                 }
             ],        
             onChapterExit:[], 
@@ -266,7 +310,12 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
+            onChapterEnter: [
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 1,
+                }
+            ],
             onChapterExit: [],
         },
         {
@@ -305,8 +354,12 @@ var config = {
                 },
                 {
                     layer: 'Socioecon-second-lowest',
-
-                }
+                    opacity: 0.8,
+                },
+                {
+                    layer: 'Socioecon-lowest',
+                    opacity: 0.8
+                },
             ],
             onChapterExit: [],
         },
