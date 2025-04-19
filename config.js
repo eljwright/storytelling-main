@@ -30,8 +30,8 @@ var config = {
             image: '',
             description: 'The history of segregation in Seattle, Washington is one with deep roots and multiple different stories. The city was founded on exclusionary bases, with legislation that expelled the native Duwamish people from residing within city limits. These segregationist roots persisted throughout the decades, with many explicit anti-Asian and anti-Black policies being enacted in the 19th and 20th centuries. This interactive mapping website will evaluate the way one specific practice known as redlining significantly contributed to socio-spatial inequality within Seattle, Washington. We will also consider the ways in which it still impacts communities to this day.',
             location: {
-                center: [-122.34078, 47.61490],
-                zoom: 10.45,
+                center: [-122.37414, 47.61064],
+                zoom: 11.06,
                 pitch: 0,
                 bearing: 0
             },
@@ -39,58 +39,13 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-               
-                {
-                    layer: 'Redlining-D-grade',
-                    opacity: 0
-                },
-                {
-                    layer: 'Redlining-C-grade',
-                    opacity: 0
-                },
-                {
-                    layer: 'Redlining-B-grade',
-                    opacity: 0
-                },
-                {
-                    layer: 'Redlining-A-grade',
-                    opacity: 0
-                },
-                {
-                    layer: 'Redlining-Indus',
-                    opacity: 0
-                },
-                {
-                    layer: 'Redlining-Busi',
-                    opacity: 0
-                },
-                {
-                    layer: 'RSE-lowest',
-                    opacity: 0
-                },
-                {
-                    layer: 'RSE-second-lowest',
-                    opacity: 0
-                },
-                {
-                    layer: 'RSE-middle',
-                    opacity: 0
-                },
-                {
-                    layer: 'RSE-second-highest',
-                    opacity: 0
-                },
-                {
-                    layer: 'RSE-highest',
-                    opacity: 0
-                },
                 {
                     layer: 'Redlining_Georef',
-                    opacity: 1
+                    opacity: 1,
                 },
                 {
-                    layer: 'Racial_Georef',
-                    opacity: 0
+                    layer: 'Racial_georef',
+                    opacity: 0,
                 }
             ],        
             onChapterExit:[], 
@@ -194,30 +149,29 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: [
-                {
-                    layer: 'HOLC_Georef',
-                    opacity: 0,
-                }
-            ],
+            onChapterExit: [],
         },
         {
             id: 'chapter-four-c',
             alignment: 'right',
             hidden: false,
             title: 'HOLC Racial Map',
-            description: 'Another example that showcases the clear racist nature of the redlining map was that in addition to the loan security map, the HOLC also created a racial map that showed the areas certain ethnicities were the most present in. In addition to showing where certain racial groups lived, the HOLC racial map also included arrows that showed the “direction of infiltration” of those groups. This is likely a direct reference to the FHA’s Underwriting Manual which warned housing developers, without sufficient evidence, that property values would be threatened by the “infiltration of inharmonious racial groups”. This map was submitted on the same day and by the same HOLC field agent as the mortgage security redlining map, and is a clear demonstration that the HOLC was always considering racial factors in their maps.',
+            description: 'Another example that showcases the clear racist nature of the redlining map was that in addition to the loan security map, the HOLC also created a racial map that showed the areas certain ethnicities were the most present in. In addition to showing where certain racial groups lived, the HOLC racial map also included arrows that showed the “direction of infiltration” of those groups. This is likely a direct reference to the FHA’s Underwriting Manual which warned housing developers, without sufficient evidence, that property values would be threatened by the “infiltration of inharmonious racial groups”. This map was submitted on the same day and by the same HOLC field agent as the mortgage security redlining map, and is a clear demonstration that the HOLC was always considering racial factors in their maps.<img class="small_image" src="/images/Racial_Map_Legend.jpg" alt="legend of the HOLC racial map of Seattle">',
             image: '',
             location: {
-                center: [-122.30497, 47.59141],
-                zoom: 10.45,
-                pitch: 15,
+                center: [-122.30995, 47.61614],
+                zoom: 11,
+                pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 0,
+                },
                 {
                     layer: 'Racial_Georef',
                     opacity: 1,
@@ -250,50 +204,6 @@ var config = {
                     layer: 'Racial_Georef',
                     opacity: 0,
                 },
-                {
-                    layer: 'Redlining-D-grade',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Redlining-C-grade',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Redlining-B-grade',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Redlining-A-grade',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Redlining-Indus',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Redlining-Busi',
-                    opacity: 0,
-                },
-                {
-                    layer: 'RSE-lowest',
-                    opacity: 0,
-                },
-                {
-                    layer: 'RSE-second-lowest',
-                    opacity: 0,
-                },
-                {
-                    layer: 'RSE-middle',
-                    opacity: 0,
-                },
-                {
-                    layer: 'RSE-second-highest',
-                    opacity: 0,
-                },
-                {
-                    layer: 'RSE-highest',
-                    opacity: 0,
-                },
             ],
             onChapterExit: [],
         },
@@ -317,54 +227,6 @@ var config = {
                 {
                     layer: 'Redlining_Georef',
                     opacity: 1,
-                },
-                {
-                    layer: 'Racial_Georef',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Redlining-D-grade',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Redlining-C-grade',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Redlining-B-grade',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Redlining-A-grade',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Redlining-Indus',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Redlining-Busi',
-                    opacity: 0,
-                },
-                {
-                    layer: 'RSE-lowest',
-                    opacity: 0,
-                },
-                {
-                    layer: 'RSE-second-lowest',
-                    opacity: 0,
-                },
-                {
-                    layer: 'RSE-middle',
-                    opacity: 0,
-                },
-                {
-                    layer: 'RSE-second-highest',
-                    opacity: 0,
-                },
-                {
-                    layer: 'RSE-highest',
-                    opacity: 0,
                 },
             ],
             onChapterExit: [],
@@ -424,7 +286,28 @@ var config = {
             rotateAnimation: false,
             callback: '',
             // On ch enter have RSE socioeconomic map appear
-            onChapterEnter: [],
+            onChapterEnter: [
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Socioecon-highest',
+                    opacity: 0.8,
+                },
+                {
+                    layer: 'Socioecon-second-highest',
+                    opacity: 0.8,
+                },
+                {
+                    layer: 'Socioecon-middle',
+                    opacity: 0.8,
+                },
+                {
+                    layer: 'Socioecon-second-lowest',
+
+                }
+            ],
             onChapterExit: [],
         },
         {
