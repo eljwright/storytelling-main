@@ -156,11 +156,11 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'HOLC Racial Map',
-            description: 'Another example that showcases the clear racist nature of the redlining map was that in addition to the loan security map, the HOLC also created a racial map that showed the areas certain ethnicities were the most present in. In addition to showing where certain racial groups lived, the HOLC racial map also included arrows that showed the “direction of infiltration” of those groups. This is likely a direct reference to the FHA’s Underwriting Manual which warned housing developers, without sufficient evidence, that property values would be threatened by the “infiltration of inharmonious racial groups”. This map was submitted on the same day and by the same HOLC field agent as the mortgage security redlining map, and is a clear demonstration that the HOLC was always considering racial factors in their maps.<br><img class="small_image" src="/images/Racial_Map_Legend.jpg" alt="legend of the HOLC racial map of Seattle">',
+            description: 'Another example that showcases the clear racist nature of the redlining map was that in addition to the loan security map, the HOLC also created a racial map that showed the areas certain ethnicities were the most present in. In addition to showing where certain racial groups lived, the HOLC racial map also included arrows that showed the “direction of infiltration” of those groups. This is likely a direct reference to the FHA’s Underwriting Manual which warned housing developers, without sufficient evidence, that property values would be threatened by the “infiltration of inharmonious racial groups”. This map was submitted on the same day and by the same HOLC field agent as the mortgage security redlining map, and is a clear demonstration that the HOLC was always considering racial factors in their maps.<br><br><img class="small_image" src="/images/Racial_Map_Legend.jpg" alt="legend of the HOLC racial map of Seattle">',
             image: '',
             location: {
                 center: [-122.30995, 47.61614],
-                zoom: 11,
+                zoom: 12,
                 pitch: 0,
                 bearing: 0
             },
