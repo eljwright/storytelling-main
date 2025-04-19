@@ -357,6 +357,26 @@ var config = {
             // On ch enter have RSE socioeconomic map appear
             onChapterEnter: [
                 {
+                    layer: 'Socioecon-highest',
+                    opacity: 0.8,
+                },
+                {
+                    layer: 'Socioecon-second-highest',
+                    opacity: 0.8,
+                },
+                {
+                    layer: 'Socioecon-middle',
+                    opacity: 0.8,
+                },
+                {
+                    layer: 'Socioecon-second-lowest',
+                    opacity: 0.8,
+                },
+                {
+                    layer: 'Socioecon-lowest',
+                    opacity: 0.8
+                },
+                {
                     layer: 'Redlining_Georef',
                     opacity: 0,
                 },
@@ -407,26 +427,6 @@ var config = {
                 {
                     layer: 'Redlining-A-grade',
                     opacity: 0,
-                },
-                {
-                    layer: 'Socioecon-highest',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Socioecon-second-highest',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Socioecon-middle',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Socioecon-second-lowest',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Socioecon-lowest',
-                    opacity: 0
                 }
             ],
             onChapterExit: [],
