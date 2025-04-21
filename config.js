@@ -934,7 +934,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'RSE Socioeconomic Map: Highest Equity Priority Areas',
-            description: 'We will now exclusively focus on the areas the city has identified as the most socioeconomically disadvantaged, the areas labeled as “highest equity priority”. These are the parts of Seattle where income and education disparities are most severe, and where the city prioritizes equitable development efforts.',
+            description: 'We will now exclusively focus on the areas the city has identified as the most socioeconomically disadvantaged, the areas labeled as “highest equity priority”. These are the parts of Seattle where income and education disparities are most severe.',
             image: '',
             location: {
                 center: [-122.27490, 47.59700], 
