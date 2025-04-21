@@ -615,7 +615,7 @@ var config = {
             alignment: 'full',
             hidden: false,
             title: 'Legislation and Modern Impacts',
-            description: 'Although redlining was finally outlawed at the federal level and local levels in 1968 with the Fair Housing Act and Fair Housing Ordinance (Ordinance 96619) respectively, elements of the practice persisted for several years. In 1975 the Central Seattle Community Council Federation published a report titled Redlining and Disinvestment in Central Seattle that outlined how even after this legislation, residents of the Central District, a redlined zone, still faced major barriers to receiving home loans. After this report was published, several local government initiatives were undertaken as an attempt to reverse the effects of redlining, these include Seattle’s Reinvestment Task Force (established 1975) and the Lenders Review Board (est 1976). <br><br><img class="small_image" src="/images/Lenders_Review_Board.jpg" alt="ad promoting the lenders review board"><br><br>Despite efforts from the city government, redlining still has a mjaor impact on Seattle today. Its legacy can be seen across many areas of inequality, including income, health, education and employment, among many others. In the following sections, we’ll look more closely at how these impacts show up in different parts of the city.',
+            description: 'Although redlining was finally outlawed at the federal level and local levels in 1968 with the Fair Housing Act and Fair Housing Ordinance (Ordinance 96619) respectively, elements of the practice persisted for several years. In 1975 the Central Seattle Community Council Federation published a report titled Redlining and Disinvestment in Central Seattle that outlined how even after this legislation, residents of the Central District, a redlined zone, still faced major barriers to receiving home loans. After this report was published, several local government initiatives were undertaken as an attempt to reverse the effects of redlining, these include Seattle’s Reinvestment Task Force (established 1975) and the Lenders Review Board (est 1976). <br>Despite efforts from the city government, redlining still has a mjaor impact on Seattle today. Its legacy can be seen across many areas of inequality, including income, health, education and employment, among many others. In the following sections, we’ll look more closely at how these impacts show up in different parts of the city.<br><br><img class="small_image" src="/images/Lenders_Review_Board.jpg" alt="ad promoting the lenders review board">',
             image: '',
             location: {
                 center: [-122.41998, 47.59141],
@@ -709,7 +709,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Modern Wealth Inequality',
-            description: 'One of the most prominent effects of redlining is that it prevented people in redlined neighborhoods from being able to own homes and build generational wealth. This led to enormous wealth gaps that still persist today between those who lived in C and D graded neighborhoods and those who lived in A and B graded neighborhoods. A recent study by ECONorthwest found that without racially discriminatory housing practices (including redlining but also practices such as racial housing covenants and private discrimination) King County’s BIPOC households would hold between $12 and $34 billion in additional wealth today. Additionally they found that each individual Black household in King County would hold between $105,000 to $306,000 in additional wealth today if it weren’t for this racial discrimination in housing. <br><br> These wealth disparities impact more than just finances, they also have a singifacnt influence on things such as access to education or healthcare.',
+            description: 'One of the most prominent effects of redlining is that it prevented people in redlined neighborhoods from being able to own homes and build generational wealth. This led to enormous wealth gaps that still persist today between those who lived in C and D graded neighborhoods and those who lived in A and B graded neighborhoods. A recent study by ECONorthwest found that without racially discriminatory housing practices (including redlining but also practices such as racial housing covenants and private discrimination) King County’s BIPOC households would hold between $12 and $34 billion in additional wealth today. Additionally they found that each individual Black household in King County would hold between $105,000 to $306,000 in additional wealth today if it weren’t for this racial discrimination in housing.  <br><br> These wealth disparities impact more than just finances, they also have a significant influence on things such as access to education or healthcare.',
             image: '',
             location: {
                 center: [-122.45885, 47.59481], 
@@ -837,7 +837,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'RSE Socioeconomic Map',
-            description: 'To better understand how redlining continues to shape Seattle today, we will now look at the city’s Racial and Social Equity (RSE) Index, specifically focusing on the socioeconomic subindex. This map shows the census tracts that the city deemed to be the most economically disadvantaged, classifications determined by a combination of income and educational attainment data. <br><br> <b>Map Legend: </b><br>Red: Highest Equity Priority/ Most Disadvantaged<br>Yellow: Second Highest Equity Priority<br>Purple: Middle<br>Blue: Second Lowest Equity Priority<br>Green: Lowest Equity Priority',
+            description: 'To better understand how redlining continues to shape Seattle today, we will now look at the Racial and Social Equity (RSE) Index, specifically focusing on the socioeconomic subindex. This map was created by the Seattle city government in 2017 to evaluate which areas of the city need to be prioritized for them to successfully fulfil their equitable development goals. The map shows the census tracts that the city deemed to be the most economically disadvantaged, classifications determined by a combination of income and educational attainment data. <br><br> <b>Map Legend: </b><br>Red: Highest Equity Priority/ Most Disadvantaged<br>Yellow: Second Highest Equity Priority<br>Purple: Middle<br>Blue: Second Lowest Equity Priority<br>Green: Lowest Equity Priority',
             image: '',
             location: {
                 center: [-122.27824, 47.61162], 
@@ -933,8 +933,8 @@ var config = {
             id: 'chapter-eight-b',
             alignment: 'right',
             hidden: false,
-            title: 'RSE Socioeconomic Map',
-            description: 'Now, focusing on the most socioeconomically disadvantaged areas of Seattle, we can see the correlation between this modern data and the historically redlined zones.',
+            title: 'RSE Socioeconomic Map: Highest Equity Priority Areas',
+            description: 'We will now exclusively focus on the areas the city has identified as the most socioeconomically disadvantaged, the areas labeled as “highest equity priority”. These are the parts of Seattle where income and education disparities are most severe, and where the city prioritizes equitable development efforts.',
             image: '',
             location: {
                 center: [-122.27490, 47.59700], 
@@ -945,7 +945,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            // Have RSE Socioecon layers (except most disadvantaged) leave, And have redlining map come back
+            // Have RSE Socioecon layers (except most disadvantaged) leave. Have layer at full opacity
             onChapterEnter: [
                 {
                     layer: 'Redlining_Georef',
@@ -982,8 +982,8 @@ var config = {
             id: 'chapter-eight-c',
             alignment: 'right',
             hidden: false,
-            title: 'RSE Socioeconomic Map',
-            description: 'Now, focusing on the most socioeconomically disadvantaged areas of Seattle, we can see the correlation between this modern data and the historically redlined zones.',
+            title: 'Socioeconomic Inequality & Redlining',
+            description: 'Here we begin to compare the distribution of modern socioeconomic inequality with the 1936 redlining map so we can explore how closely modern inequalities follow historic redlining boundaries.<br><br>As this map shows, nearly all of the “highest equity priority” areas are concentrated in the southern part of the city, with the main exception being the area around the University of Washington. ',
             image: '',
             location: {
                 center: [-122.27490, 47.59700], 
@@ -994,7 +994,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            // Have RSE Socioecon layers (except most disadvantaged) leave, And have redlining map come back
+            // Bring back redlining layer
             onChapterEnter: [
                 {
                     layer: 'Redlining_Georef',
@@ -1031,8 +1031,8 @@ var config = {
             id: 'chapter-eight-d',
             alignment: 'right',
             hidden: false,
-            title: 'RSE Socioeconomic Map',
-            description: 'Now, focusing on the most socioeconomically disadvantaged areas of Seattle, we can see the correlation between this modern data and the historically redlined zones.',
+            title: 'Socioeconomic Inequality & Redlining',
+            description: 'Now, with the RSE layer slightly transparent, we can see that today’s most socioeconomically disadvantaged neighborhoods were almost all graded as “hazardous” or “definitely declining” on the 1936 HOLC redlining map. This includes parts of the Central District (D5), Rainier Valley (C13 & C14), and Delridge (D8 & C15). The correlation is no coincidence. Families in redlined areas were systematically denied the opportunity to build and pass down wealth through homeownership, a key factor in long term economic opportunity.<br><br>We’ll now move on to exploring other factors, namely disinvestment and gentrification, that have also continued to reinforce the inequalities of redlining.',
             image: '',
             location: {
                 center: [-122.27490, 47.59700], 
@@ -1043,6 +1043,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
+            // Lower opacity of RSE layer
             onChapterEnter: [
                 {
                     layer: 'Redlining_Georef',
@@ -1072,60 +1073,6 @@ var config = {
                     layer: 'Socioecon-lowest',
                     opacity: 0
                 },
-            ],
-            onChapterExit: [],
-        },
-        {
-            id: 'chapter-eight-e',
-            alignment: 'right',
-            hidden: false,
-            title: 'RSE Socioeconomic Map: Central District',
-            description: 'Zooming into the historically redlined Central District, including zone D4 that we looked at earlier, shows that much of the area is now part of census tracts with some of the highest levels of economic inequality in Seattle. This pattern is largely the result of past housing discrimination like redlining, which denied families the opportunity to build and pass down generational wealth, a key factor in long term economic opportunity.',
-            image: '',
-            location: {
-                center: [-122.30304, 47.59607],
-                zoom: 13.25,
-                pitch: 0,
-                bearing: 0
-            },
-            speed: 2,
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            // RSE SOCIOECONOMIC MAP!!!
-            onChapterEnter: [
-                {
-                    layer: 'Redlining_Georef',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Racial_Georef',
-                    opacity: 0,
-                },
-                {
-                    layer: 'Socioecon-highest',
-                    opacity: 0.7,
-                },
-                {
-                    layer: 'Socioecon-second-highest',
-                    opacity: 0.7,
-                },
-                {
-                    layer: 'Socioecon-middle',
-                    opacity: 0.7,
-                },
-                {
-                    layer: 'Socioecon-second-lowest',
-                    opacity: 0.7,
-                },
-                {
-                    layer: 'Socioecon-lowest',
-                    opacity: 0.7
-                },
-                {
-                    layer: 'Redlining_Line',
-                    opacity: 1,
-                }
             ],
             onChapterExit: [],
         },
