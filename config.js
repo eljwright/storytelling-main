@@ -1032,7 +1032,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Socioeconomic Inequality & Redlining',
-            description: 'Now, with the RSE layer slightly transparent, we can see that today’s most socioeconomically disadvantaged neighborhoods were almost all graded as “hazardous” or “definitely declining” on the 1936 HOLC redlining map. This includes parts of the Central District (D5), Rainier Valley (C13 & C14), and Delridge (D8 & C15). The correlation is no coincidence. Families in redlined areas were systematically denied the opportunity to build and pass down wealth through homeownership, a key factor in long term economic opportunity.<br><br>We’ll now move on to exploring other factors, namely disinvestment and gentrification, that have also continued to reinforce the inequalities of redlining.',
+            description: 'Now, with the RSE layer transparent, we can see that today’s most socioeconomically disadvantaged neighborhoods were almost all graded as “hazardous” or “definitely declining” on the 1936 HOLC redlining map. This includes parts of the Central District (D5), Rainier Valley (C13 & C14), and Delridge (D8 & C15). The correlation is no coincidence. Families in redlined areas were systematically denied the opportunity to build and pass down wealth through homeownership, a key factor in long term economic opportunity.<br><br>We’ll now move on to exploring other factors, namely disinvestment and gentrification, that have also continued to reinforce the inequalities of redlining.',
             image: '',
             location: {
                 center: [-122.27490, 47.59700], 
@@ -1055,7 +1055,7 @@ var config = {
                 },
                 {
                     layer: 'Socioecon-highest',
-                    opacity: 0.7,
+                    opacity: 0.65,
                 },
                 {
                     layer: 'Socioecon-second-highest',
