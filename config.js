@@ -1074,7 +1074,12 @@ var config = {
                     opacity: 0
                 },
             ],
-            onChapterExit: [],
+            onChapterExit: [
+                {
+                    layer: 'Redlining_Line',
+                    opacity: 0
+                }
+            ],
         },
         {
             id: 'chapter-nine',
@@ -1094,6 +1099,10 @@ var config = {
             callback: '',
             // RSE SOCIOECONOMIC MAP LEAVES - back to georeferenced redlining map
             onChapterEnter: [
+                {
+                    layer: 'Redlining_Line',
+                    opacity: 0
+                },
                 {
                     layer: 'Socioecon-highest',
                     opacity: 0,
