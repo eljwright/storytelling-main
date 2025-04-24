@@ -40,6 +40,10 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
+                    layer: 'Racial_Georef',
+                    opacity: 0,
+                },
+                {
                     layer: 'Redlining_Line',
                     opacity: 0,
                 },
@@ -62,10 +66,6 @@ var config = {
                 {
                     layer: 'Socioecon-lowest',
                     opacity: 0
-                },
-                {
-                    layer: 'Racial_georef',
-                    opacity: 0,
                 },
                 {
                     layer: 'RSE-highest',
@@ -207,8 +207,8 @@ var config = {
             image: '',
             description:'Meanwhile the HOLC, worried about taking on risky loans, made color-coded maps to assess the riskiness of granting home loans in different neighborhoods. They created four different categories that they would rank neighborhoods into. <br><br> These grades were: <br> <p style="color:green;">A: Best - Green</p> <p style="color:blue;">B: Still Desirable - Blue</p> <p style="color:yellow;">C: Definitely Declining - Yellow</p> <p style="color:red;">D: Hazardous - Red</p><br>After these maps were created, they were adopted by the FHA as well as private banks to inform their decisions on who to lend to. This meant that families and individuals in the Red and Yellow graded neighborhoods would be systematically denied home loans.',
             location: {
-                center: [-122.37414, 47.61064],
-                zoom: 11.06,
+                center: [-122.45885, 47.59481], 
+                zoom: 10.7,
                 pitch: 0,
                 bearing: 0
             },
@@ -275,10 +275,10 @@ var config = {
             hidden: false,
             title: 'Racial component of HOLC grades',
             image: '',
-            description: 'Although the HOLC maps were supposed to be about economic stability and who would be able to pay off their loans in the future, racial demographics were undeniably a major factor in what grade a neighborhood would receive. White neighborhoods were typically classified as “Best”, but if even one Black family lived there, the neighborhood would be determined to be “Definitely Declining” or “Hazardous”. This is especially noticeable when you review the area descriptions that were written to inform the grades. The following Seattle area descriptions will also show the significant difference in the factors used to categorize neighborhoods based on race.',
+            description: 'Although the HOLC maps were supposed to be about economic stability and who would be able to pay off their loans in the future, racial demographics were undeniably a major factor in what grade a neighborhood would receive. White neighborhoods were typically classified as “Best”, but if even one Black family lived there, the neighborhood would be determined to be “Definitely Declining” or “Hazardous”. This is especially noticeable when you review the area descriptions that were written to inform the grades.The following Seattle area descriptions will also demonstrate the significant difference in the factors used to categorize neighborhoods.',
             location: {
-                center: [-122.37414, 47.61064],
-                zoom: 11.06,
+                center: [-122.45885, 47.59481], 
+                zoom: 10.7,
                 pitch: 0,
                 bearing: 0
             },
@@ -345,11 +345,11 @@ var config = {
             hidden: false,
             title: 'Area Description Example: Zone A3',
             image: '',
-            description: 'Non-white neighborhoods, such as this one in modern-day Laurelhurst, often had long and detailed descriptions of the quality of the houses and other factors affecting the neighborhood. <br> <br> <b>A3 area description:</b> “This area is one of the most popular residential districts in Seattle. The residents are of the professional class, having an annual income of $4000 to $10,000 per year. There is very choice view property in this area. The homes, generally, are less than to years old-- in the $6500 to $15,000 price class; and well maintained. During 1935 there were some new residential structures placed under construction in this area. The property is protected by building and racial restrictions.”',
+            description: 'Non-white neighborhoods, such as this one in modern-day Laurelhurst, often had long and detailed descriptions of the quality of the houses and other factors affecting the neighborhood. <br> <br> <b>A3 area description:</b> “This area is one of the most popular residential districts in Seattle. The residents are of the professional class, having an annual income of $4000 to $10,000 per year. There is very choice view property in this area. The homes, generally, are less than two years old-- in the $6500 to $15,000 price class; and well maintained. During 1935 there were some new residential structures placed under construction in this area. The property is protected by building and racial restrictions.”',
             location: {
                 center: [-122.27079, 47.65791],
                 zoom: 13.5,
-                pitch: 0,
+                pitch: 15,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -417,9 +417,9 @@ var config = {
             image: '',
             description: 'Neighborhoods with non-white residents, such as the Central District which was majority Black, often had area descriptions that only described the race of the residents and nothing else. <br><br> <b>D4 area description:</b> “This is a negro area of Seattle”. <br><br>This area description is notably much shorter than those in white neighborhoods (such as A3). They didn’t describe the quality of the houses at all and decided that because it was a Black neighborhood, that was a good enough reason to grade it as “hazardous”. This demonstrates the significant disparity between how redlining grades were determined between white and non-white neighborhoods and how heavily racialized they were.',
             location: {
-                center: [-122.29692, 47.61785],
+                center: [-122.29845, 47.61994], 
                 zoom: 13.25,
-                pitch: 0,
+                pitch: 15,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -483,12 +483,82 @@ var config = {
             id: 'chapter-four-c',
             alignment: 'right',
             hidden: false,
+            title: 'Area Description Example: Zone D5',
+            image: '',
+            description: 'Some “hazardous” areas, like D5 (just next to D4), did include a little more explanation for their redlining grade.<br><br><b>D5 area description:</b><br>“This district is composed of various mixed nationalities. Homes are occupied by tenants in a vast majority. Homes generally old and obsolete in need of extensive repairs.”<br><br>But this is still much less detailed than the descriptions used for white neighborhoods. Additionally, when you look at historical photos of the homes in this area, it’s clear that race likely played a bigger role than the condition of the houses. In fact, many of the homes in D5 don’t look much different from those in the A3 “best” neighborhood.<br><img src="/images/CD_houses.jpg"><br>23rd Avenue and Atlantic Street, 1936<br><br><img src="/images/CD_houses2.jpg"><br>20th Avenue and Spruce Street, 1925',
+            location: {
+                center: [-122.29692, 47.59588],
+                zoom: 13,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [                {
+                layer: 'Socioecon-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-second-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-middle',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-second-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-lowest',
+                opacity: 0
+            },
+            {
+                layer: 'Racial_georef',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-second-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-middle',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-second-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'Redlining_Georef',
+                opacity: 1,
+            },
+            {
+                layer: 'Racial_Georef',
+                opacity: 0,
+            }],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-four-d',
+            alignment: 'left',
+            hidden: false,
             title: 'HOLC Racial Map',
             description: 'Another example that showcases the clear racist nature of the redlining map was that in addition to the loan security map, the HOLC also created a racial map that showed the areas certain ethnicities were the most present in. In addition to showing where certain racial groups lived, the HOLC racial map also included arrows that showed the “direction of infiltration” of those groups. This is likely a direct reference to the FHA’s Underwriting Manual which warned housing developers, without sufficient evidence, that property values would be threatened by the “infiltration of inharmonious racial groups”. This map was submitted on the same day and by the same HOLC field agent as the mortgage security redlining map, and is a clear demonstration that the HOLC was always considering racial factors in their maps.<br><br><img class="small_image" src="/images/Racial_Map_Legend.jpg" alt="legend of the HOLC racial map of Seattle">',
             image: '',
             location: {
-                center: [-122.30995, 47.61614],
-                zoom: 12,
+                center: [-122.42645, 47.58040], 
+                zoom: 11.5,
                 pitch: 0,
                 bearing: 0
             },
@@ -520,8 +590,8 @@ var config = {
             description: 'As previously mentioned, redlining severely impacted the individuals and families who were in the C and D graded areas. These categories meant that people in those areas deemed as “definitely declining” or “hazardous” could not get mortgage loans or if they did manage to secure a loan, got highly unfavorable conditions. This prevented them from building generational wealth in the form of home equity, which has had major impacts that are still impacting these communities today.',
             image: '',
             location: {
-                center: [-122.37414, 47.61064],
-                zoom: 11.06,
+                center: [-122.45885, 47.59481], 
+                zoom: 10.7,
                 pitch: 0,
                 bearing: 0
             },
@@ -1085,13 +1155,13 @@ var config = {
             id: 'chapter-nine',
             alignment: 'left',
             hidden: false,
-            title: 'Disinvestment and Neighborhood Deterioration',
+            title: 'Disinvestment & Neighborhood Deterioration',
             description: 'Redlining became a self-fulfilling prophecy. Redlining and Disvestment in Central Seattle Report <br><br><img src="/images/Redlining_and_Disinvestment.jpg" alt="image of the cover of the Redlining and Disinvestment in Central Seattle Report" width="75" height="200">',
             image: '',
             location: {
-                center: [-122.41998, 47.59141],
-                zoom: 10.45,
-                pitch: 15,
+                center: [-122.45885, 47.59481], 
+                zoom: 10.7,
+                pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -1312,7 +1382,7 @@ var config = {
             id: 'chapter-ten',
             alignment: 'left',
             hidden: false,
-            title: 'Gentrification and Displacement',
+            title: 'Gentrification & Displacement',
             description: 'Redlining and the disinvestment it caused left certain communities, particularly those that were redlined, more vulnerable to gentrification. <b>Gentrification is the process in which lower-income urban neighborhoods undergo demographic shifts due to increased investment in the area and wealthier individuals moving in.</b> Gentrification often leads to displacement of long-term residents, as increased investment drives up rent prices, making it unaffordable for them to stay. Gentrification disproportionately affects formerly redlined neighborhoods due to their history of disinvestment, often forcing people out of the only neighborhoods they were historically allowed to live in.<br> <br> While this issue affects many American cities, the tech economy of Seattle makes these trends even more apparent. In 2019, Seattle was named the <a href="https://www.seattletimes.com/seattle-news/data/seattle-ranks-near-top-for-gentrification-but-that-might-not-be-as-bad-as-you-think-study-finds/3rd" target="_blank"> third most gentrifying US city.</a> Gentrification and displacement illustrate that housing inequality is not only the result of poor government policy. Corporations also bear a significant portion of the responsibility. In Seattle, these corporations play a key role in the gentrification of formerly redlined zones, as they bring an influx of out-of-towners who often desire to live in the city center. In addition to the population growth they cause, Seattle corporations have been described as <a href="https://systemicjustice.org/article/redlining-and-disinvestment-a-case-study-on-racial-segregation-and-gentrification-throughout-seattles-central-district/" target="_blank">“[capturing] the city’s political and economic landscape”</a>, leveraging their power to block affordable housing initiatives.',
             image: '',
             location: {
@@ -1332,11 +1402,30 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Gentrification: Rainier Valley',
-            description: 'TOD and risk of modern investment in historically disinvested areas. Resident quote. Home prices stat.',
+            description: 'One area of Seattle that has significantly been affected by gentrification is the Rainier Valley in the South side of the city. The Rainier Valley was graded as “Definitely Declined” on the 1936 HOLC map, with area descriptions (C13 & C14) labeling it a “very spotted residential district composed of people of various nationalities”. Similarly to the Central District, redlining caused a severe lack of investment in Rainier Valley which has continued to affect its neighborhoods for decades.<br><br>The Rainier Valley also faces another issue which stems from the city expanding its light rail service to the area in the name of “Transit Oriented Development”. This has played into the gentrification of the valley, as the new stations have brought increased development that has significantly changed the character of the neighborhood. In particular, areas around the light rail stations have seen dramatic increases in rent and land values.',
             image: '',
             location: {
-                center: [-122.28854, 47.54721],
-                zoom: 12.15,
+                center: [-122.23709, 47.53632],
+                zoom: 12,
+                pitch: 15,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-ten-b',
+            alignment: 'right',
+            hidden: false,
+            title: 'Gentrification: Rainier Beach',
+            description: 'The long-term effects of redlining are especially visible in Rainier Beach, one of Seattle’s most racially diverse neighborhoods, where 82% of residents identify as people of color. Like other redlined neighborhoods of Seattle, Rainier Beach has experienced decades of disinvestment. Today, residents have started calling it “gentrification ground zero” due to rising housing prices and the displacement of longtime residents.<br><br><b><a href="https://www.realchangenews.org/news/2018/12/05/displacement-tax-update-gentrification-ground-zero-rainier-beach" target="_blank">One resident discusses:</a></b><blockquote cite=""https://www.realchangenews.org/news/2018/12/05/displacement-tax-update-gentrification-ground-zero-rainier-beach"">“And here we are, living history as it repeats itself in the Rainier Valley. As White people move in, property values increase and, by extension, my taxes increase. The city of Seattle was clearly complicit in allowing property taxes to become a tool of racial oppression.”</blockquote><br>This quote highlights how gentrification in Rainier Beach is history repeating itself, building on the patterns of inequality that redlining created. It also shows how gentrification doesn’t just affect renters, as it can cause property taxes that homeowners pay to increase.<br><br>Finally, even for renters that can afford to stay in the area as it gentrifies, rising housing prices often make it impossible for them to ever buy their own home. In Rainier Beach, average home values have increased by almost $170,000 in the past five years. This perpetuates the same trends that redlining caused in the first place, keeping homeownership firmly out of reach for many Seattlites.<br><br><img src="/images/LawnSign_2.jpg">',
+            image: '/images/LawnSign_1.jpg',
+            location: {
+                center: [-122.25406, 47.51643],
+                zoom: 13.25,
                 pitch: 15,
                 bearing: 0
             },
