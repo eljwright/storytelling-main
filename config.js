@@ -1383,7 +1383,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Gentrification & Displacement',
-            description: 'Redlining and the disinvestment it caused left certain communities, particularly those that were redlined, more vulnerable to gentrification. <b>Gentrification is the process in which lower-income urban neighborhoods undergo demographic shifts due to increased investment in the area and wealthier individuals moving in.</b> Gentrification often leads to displacement of long-term residents, as increased investment drives up rent prices, making it unaffordable for them to stay. Gentrification disproportionately affects formerly redlined neighborhoods due to their history of disinvestment, often forcing people out of the only neighborhoods they were historically allowed to live in.<br> <br> While this issue affects many American cities, the tech economy of Seattle makes these trends even more apparent. In 2019, Seattle was named the <a href="https://www.seattletimes.com/seattle-news/data/seattle-ranks-near-top-for-gentrification-but-that-might-not-be-as-bad-as-you-think-study-finds/3rd" target="_blank"> third most gentrifying US city.</a> Gentrification and displacement illustrate that housing inequality is not only the result of poor government policy. Corporations also bear a significant portion of the responsibility. In Seattle, these corporations play a key role in the gentrification of formerly redlined zones, as they bring an influx of out-of-towners who often desire to live in the city center. In addition to the population growth they cause, Seattle corporations have been described as <a href="https://systemicjustice.org/article/redlining-and-disinvestment-a-case-study-on-racial-segregation-and-gentrification-throughout-seattles-central-district/" target="_blank">“[capturing] the city’s political and economic landscape”</a>, leveraging their power to block affordable housing initiatives.',
+            description: 'Redlining and the disinvestment it caused left certain communities, particularly those that were redlined, more vulnerable to gentrification. <b>Gentrification is the process in which lower-income urban neighborhoods undergo demographic shifts due to increased investment in the area and wealthier individuals moving in.</b> Gentrification often leads to displacement of long-term residents, as increased investment drives up rent prices, making it unaffordable for them to stay. Gentrification disproportionately affects formerly redlined neighborhoods due to their history of disinvestment, often forcing people out of the only neighborhoods they were historically allowed to live in.<br> <br> While this issue affects many American cities, the tech economy of Seattle makes these trends even more apparent. In 2019, Seattle was named the <a href="https://www.seattletimes.com/seattle-news/data/seattle-ranks-near-top-for-gentrification-but-that-might-not-be-as-bad-as-you-think-study-finds/3rd" target="_blank"> third most gentrifying US city.</a> Gentrification and displacement illustrate that housing inequality is not only the result of poor government policy but that corporations also bear a significant portion of the responsibility. In Seattle, these corporations play a key role in the gentrification of formerly redlined zones, as they bring an influx of out-of-towners who often desire to live in the city center. In addition to the population growth they cause, Seattle corporations have been described as <a href="https://systemicjustice.org/article/redlining-and-disinvestment-a-case-study-on-racial-segregation-and-gentrification-throughout-seattles-central-district/" target="_blank">“[capturing] the city’s political and economic landscape”</a>, leveraging their power to block affordable housing initiatives.',
             image: '',
             location: {
                 center: [-122.45885, 47.59700], 
@@ -1693,6 +1693,64 @@ var config = {
                     layer: 'RSE-highest',
                     opacity: 0,
                 },
+            ],
+        },
+        {
+            id: 'chapter-twelve',
+            alignment: 'left',
+            hidden: false,
+            title: 'Conclusion & Comprehensive Map Introduction',
+            description: 'The maps, stories, and data we’ve explored tell a clear story:<br><b>Redlining isn’t just a case of historic discrimination but its legacy continues to shape inequality in Seattle today.</b><br><br>Understanding the connections between historic discriminatory practices and modern day inequality gives us a better understanding of how deeply systemic and persistent these issues are. It also gives us the power to challenge them and push for better solutions going forward.<br><br>To continue exploring the legacy of redlining, use the comprehensive map below. This tool lets you compare the original HOLC zones (left) to the RSE Composite index (right), to explore connections of redlining to modern day inequality. Use the map to look at your own neighborhood or explore areas you care about, and consider what this history means for the future of our city.',
+            image: '',
+            location: {
+                center: [-122.45885, 47.59481], 
+                zoom: 10.7,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            // RSE COMP MAP LEAVES - back to georeferenced redlining map
+            onChapterEnter: [
+                {
+                    layer: 'Redlining_Line',
+                    opacity: 0
+                },
+                {
+                    layer: 'Racial_georef',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-highest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-highest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-middle',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 1,
+                },
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 1,
+                }
             ],
         },
     ]
