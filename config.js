@@ -612,15 +612,15 @@ var config = {
         },
         {
             id: 'chapter-six',
-            alignment: 'full',
+            alignment: 'center',
             hidden: false,
             title: 'Community Resistance',
             description: 'Before going into detail on the enduring legacy of redlining within Seattle, we will look at the history of legislation and community resistance to redlining <br> Summer of 1963!! (locally and nationally)<br><img src="images/Sit-in_1.jpg" alt="July 1 1963 sit-in" width="50" height="200">',
             image: '/images/Sit-in_1.jpg',
             location: {
-                center: [-122.41998, 47.59141],
-                zoom: 10.45,
-                pitch: 15,
+                center: [-122.30502, 47.60309],
+                zoom: 12,
+                pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -682,15 +682,15 @@ var config = {
         },
         {
             id: 'chapter-seven',
-            alignment: 'full',
+            alignment: 'center',
             hidden: false,
             title: 'Legislation and Modern Impacts',
             description: 'Although redlining was finally outlawed at the federal level and local levels in 1968 with the Fair Housing Act and Fair Housing Ordinance (Ordinance 96619) respectively, elements of the practice persisted for several years. In 1975 the Central Seattle Community Council Federation published a report titled Redlining and Disinvestment in Central Seattle that outlined how even after this legislation, residents of the Central District, a redlined zone, still faced major barriers to receiving home loans. After this report was published, several local government initiatives were undertaken as an attempt to reverse the effects of redlining, these include Seattle’s Reinvestment Task Force (established 1975) and the Lenders Review Board (est 1976). <br>Despite efforts from the city government, redlining still has a mjaor impact on Seattle today. Its legacy can be seen across many areas of inequality, including income, health, education and employment, among many others. In the following sections, we’ll look more closely at how these impacts show up in different parts of the city.<br><br><img class="small_image" src="/images/Lenders_Review_Board.jpg" alt="ad promoting the lenders review board">',
             image: '',
             location: {
-                center: [-122.41998, 47.59141],
-                zoom: 10.45,
-                pitch: 15,
+                center: [-122.30502, 47.60309],
+                zoom: 12,
+                pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -1156,7 +1156,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Disinvestment & Neighborhood Deterioration',
-            description: 'Redlining became a self-fulfilling prophecy. Redlining and Disvestment in Central Seattle Report <br><br><img src="/images/Redlining_and_Disinvestment.jpg" alt="image of the cover of the Redlining and Disinvestment in Central Seattle Report" width="75" height="200">',
+            description: 'On top of the severe wealth disparity faced by residents of redlined neighborhoods, redlining also caused disinvestment which has continued to impact communities for decades. The 1975 report Redlining and Disinvestment in Central Seattle defines displacement as “a general policy followed by banks of taking in savings deposits from residents of a redlined area but refusing to return that money, in the form of home, business, and consumer loans, to the community that provided the money”.<br><br>This practice goes against how banks are intended to function. Normally, money individuals deposit into banks will later be reinvested back into the same community it came from, by supporting home ownership, local businesses, and public infrastructure like schools. But in redlined areas, banks refused to give loans to the people living there. Instead, the money local residents deposited into banks would be sent to support the development of wealthy suburbs outside the city.<br><br>This turned redlining into a self-fulfilling prophecy. By denying access to loans and reinvestment, banks caused redlined neighborhoods to deteriorate, justifying their original “hazardous” designations and blaming residents for the conditions the banks themselves caused. This lack of investment is more than just an economic issue. It has contributed to crumbling infrastructure, underfunded schools, and limited job opportunities. These consequences continue to affect formerly redlined communities today and play a major role in the continued inequality within Seattle.<br><br><img src="/images/Redlining_and_Disinvestment.jpg" alt="image of the cover of the Redlining and Disinvestment in Central Seattle Report">',
             image: '',
             location: {
                 center: [-122.45885, 47.59481], 
@@ -1310,7 +1310,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Disinvestment: Central District',
-            description: 'Banks took money from residents and invested it into white suburbs (Redlining and Disinvestment Report)<br><br><img src="/images/Redlining_Song.jpg" alt="Redlining Anthem" width="75" height="200">',
+            description: 'Within the Central District, the Redlining and Disinvestment report detailed how almost none of the money residents were depositing into banks was being reinvested into their community. Specifically, for every $1 that residents deposited into local banks, only 25¢ would be returned to the area, and none of that money would be seen in the redlined areas of the Central District. Meanwhile, in the suburbs, for every $1 deposited, $2 would be reinvested back into their community. <br><br>This funneling of money out of Central Seattle has drained the area of resources for decades. It stunted economic growth, deepened existing inequalities, and left the area especially vulnerable to later challenges like gentrification.<br><br><img src="/images/Redlining_Song.jpg" alt="Redlining Anthem">',
             //Make image clickable so people can zoom into it
             image: '',
             location: {
@@ -1434,6 +1434,266 @@ var config = {
             callback: '',
             onChapterEnter: [],
             onChapterExit: [],
+        },
+        {
+            id: 'chapter-eleven',
+            alignment: 'right',
+            hidden: false,
+            title: 'RSE Composite Map',
+            description: 'While studying redlining it is essential to understand its long lasting legacy and how American cities are still spatially segregated based on the HOLC map boundaries today. To explore this trend we will now look at the Racial and Social Equity Composite Index. This is part of the same RSE mapping project as the Socioeconomic Index we looked at earlier, however this one combines multiple subindices with demographic data on race, immigrant and English language learner status, socioeconomic status, and health. This combined index provides a relatively comprehensive overview of which areas of the city are the most disadvantaged and can help us evaluate the way modern inequality is spatially distributed in Seattle. ',
+            image: '',
+            location: {
+                center: [-122.27824, 47.61162], 
+                zoom: 10.4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            // On ch enter have RSE comp map appear
+            onChapterEnter: [
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining_Line',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Racial_Georef',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-highest',
+                    opacity: 0.9,
+                },
+                {
+                    layer: 'RSE-second-highest',
+                    opacity: 0.9,
+                },
+                {
+                    layer: 'RSE-middle',
+                    opacity: 0.9,
+                },
+                {
+                    layer: 'RSE-second-lowest',
+                    opacity: 0.9,
+                },
+                {
+                    layer: 'RSE-lowest',
+                    opacity: 0.9,
+                },
+            ],
+        },
+        {
+            id: 'chapter-eleven-a',
+            alignment: 'right',
+            hidden: false,
+            title: 'RSE Composite Map',
+            description: 'The RSE map is divided into the most recent census tracts (2020) and each tract is given a composite score based on the three subindices (the Race, English Language Learners, and Origins index, Socioeconomic disadvantage index, and health disadvantage index). These scores were then ranked to form five groups that showcase the city’s priority levels of each neighborhood, with classifications ranging from Highest Equity Priority, meaning they face the most challenges today, to Lowest Equity Priority. <br><br> <b>Map Legend: </b><br>Red: Highest Equity Priority/ Most Disadvantaged<br>Yellow: Second Highest Equity Priority<br>Purple: Middle<br>Blue: Second Lowest Equity Priority<br>Green: Lowest Equity Priority',
+            image: '',
+            location: {
+                center: [-122.27824, 47.61162], 
+                zoom: 10.4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'Redlining_Line',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Racial_Georef',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-highest',
+                    opacity: 0.9,
+                },
+                {
+                    layer: 'RSE-second-highest',
+                    opacity: 0.9,
+                },
+                {
+                    layer: 'RSE-middle',
+                    opacity: 0.9,
+                },
+                {
+                    layer: 'RSE-second-lowest',
+                    opacity: 0.9,
+                },
+                {
+                    layer: 'RSE-lowest',
+                    opacity: 0.9,
+                },
+            ],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-eleven-b',
+            alignment: 'right',
+            hidden: false,
+            title: 'RSE Composite Map: Highest Equity Priority Areas',
+            description: 'Now that we’ve removed the other layers, you can clearly see which areas of Seattle are described as being the highest equity priorities today. This designation means the area faces significant inequality challenges that the city is trying to combat through equitable development initiatives.<br><br>If this map looks similar, that is because most of the neighborhoods were also highest equity priorities in the socioeconomic index map we looked at earlier. This makes sense because this composite index includes that same data, plus additional factors like race, immigration status, and health inequalities.<br><br>The fact that these same areas show up across multiple inequality maps reinforces just how impactful the effects of redlining were on those communities.',
+            image: '',
+            location: {
+                center: [-122.27490, 47.59700], 
+                zoom: 10.7,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            // Have RSE Comp layers (except most disadvantaged) leave. Have layer at full opacity
+            onChapterEnter: [
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 0,
+                },
+                {
+                    layer: 'Redlining_Line',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-highest',
+                    opacity: 1,
+                },
+                {
+                    layer: 'RSE-second-highest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-middle',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-lowest',
+                    opacity: 0,
+                },
+            ],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-eleven-c',
+            alignment: 'right',
+            hidden: false,
+            title: 'RSE Composite Map & Redlining',
+            description: 'As we bring back the 1936 redlining map behind the RSE data, the connection becomes hard to ignore.<br><br>As with the socioeconomic index, many of the areas that the HOLC graded as “definitely declining” and “hazardous” nearly a century ago are the same places that show up as highest equity priorities today.',
+            image: '',
+            location: {
+                center: [-122.27490, 47.59700], 
+                zoom: 10.7,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            // Bring back redlining layer
+            onChapterEnter: [
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 1,
+                },
+                {
+                    layer: 'Redlining_Line',
+                    opacity: 1,
+                },
+                {
+                    layer: 'RSE-highest',
+                    opacity: 1,
+                },
+                {
+                    layer: 'RSE-second-highest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-middle',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-lowest',
+                    opacity: 0,
+                },
+            ],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-eleven-d',
+            alignment: 'right',
+            hidden: false,
+            title: 'RSE Composite Map & Redlining',
+            description: 'As we lower the opacity of the equity priority areas, the spatial alignment between today’s most disadvantaged neighborhoods and the areas redlined in the past becomes even more clear.<br><br>This comparison shows just how deeply the legacy of redlining is embedded in the city of Seattle. Despite being over 50 years removed from legislation that prohibited redlining and other forms of housing discrimination, communities are still feeling the effects.',
+            image: '',
+            location: {
+                center: [-122.27490, 47.59700], 
+                zoom: 10.7,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            // Lower opacity of RSE layer
+            onChapterEnter: [
+                {
+                    layer: 'Redlining_Georef',
+                    opacity: 1,
+                },
+                {
+                    layer: 'Redlining_Line',
+                    opacity: 1,
+                },
+                {
+                    layer: 'RSE-highest',
+                    opacity: 0.7,
+                },
+                {
+                    layer: 'RSE-second-highest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-middle',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-second-lowest',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-lowest',
+                    opacity: 0,
+                },
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Redlining_Line',
+                    opacity: 0,
+                },
+                {
+                    layer: 'RSE-highest',
+                    opacity: 0,
+                },
+            ],
         },
     ]
 };
