@@ -618,8 +618,8 @@ var config = {
             description: 'Before going into detail on the enduring legacy of redlining within Seattle, we will look at the history of legislation and community resistance to redlining <br> Summer of 1963!! (locally and nationally)<br><img src="images/Sit-in_1.jpg" alt="July 1 1963 sit-in" width="50" height="200">',
             image: '/images/Sit-in_1.jpg',
             location: {
-                center: [-122.30502, 47.60309],
-                zoom: 12,
+                center: [-122.32437, 47.60309],
+                zoom: 12.5,
                 pitch: 0,
                 bearing: 0
             },
@@ -688,8 +688,8 @@ var config = {
             description: 'Although redlining was finally outlawed at the federal level and local levels in 1968 with the Fair Housing Act and Fair Housing Ordinance (Ordinance 96619) respectively, elements of the practice persisted for several years. In 1975 the Central Seattle Community Council Federation published a report titled Redlining and Disinvestment in Central Seattle that outlined how even after this legislation, residents of the Central District, a redlined zone, still faced major barriers to receiving home loans. After this report was published, several local government initiatives were undertaken as an attempt to reverse the effects of redlining, these include Seattle’s Reinvestment Task Force (established 1975) and the Lenders Review Board (est 1976). <br>Despite efforts from the city government, redlining still has a mjaor impact on Seattle today. Its legacy can be seen across many areas of inequality, including income, health, education and employment, among many others. In the following sections, we’ll look more closely at how these impacts show up in different parts of the city.<br><br><img class="small_image" src="/images/Lenders_Review_Board.jpg" alt="ad promoting the lenders review board">',
             image: '',
             location: {
-                center: [-122.30502, 47.60309],
-                zoom: 12,
+                center: [-122.32437, 47.60309],
+                zoom: 12.5,
                 pitch: 0,
                 bearing: 0
             },
@@ -1437,14 +1437,14 @@ var config = {
         },
         {
             id: 'chapter-eleven',
-            alignment: 'right',
+            alignment: 'left',
             hidden: false,
             title: 'RSE Composite Map',
             description: 'While studying redlining it is essential to understand its long lasting legacy and how American cities are still spatially segregated based on the HOLC map boundaries today. To explore this trend we will now look at the Racial and Social Equity Composite Index. This is part of the same RSE mapping project as the Socioeconomic Index we looked at earlier, however this one combines multiple subindices with demographic data on race, immigrant and English language learner status, socioeconomic status, and health. This combined index provides a relatively comprehensive overview of which areas of the city are the most disadvantaged and can help us evaluate the way modern inequality is spatially distributed in Seattle. ',
             image: '',
             location: {
-                center: [-122.27824, 47.61162], 
-                zoom: 10.4,
+                center: [-122.45885, 47.59700], 
+                zoom: 10.7,
                 pitch: 0,
                 bearing: 0
             },
