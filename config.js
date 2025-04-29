@@ -751,6 +751,76 @@ var config = {
             onChapterExit: [],
         },
         {
+            id: 'chapter-six-b',
+            alignment: 'right',
+            hidden: false,
+            title: 'Community Resistance: Open Housing Hearing',
+            description: '<b>October 25, 1963</b><br><audio controls><source src="adams_32kbps.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>',
+            image: '',
+            location: {
+                center: [-122.33212, 47.60440],
+                zoom: 14.9,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [                {
+                layer: 'Socioecon-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-second-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-middle',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-second-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-lowest',
+                opacity: 0
+            },
+            {
+                layer: 'Racial_georef',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-second-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-middle',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-second-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'Redlining_Georef',
+                opacity: 1,
+            },
+            {
+                layer: 'Racial_Georef',
+                opacity: 0,
+            }],
+            onChapterExit: [],
+        },
+        {
             id: 'chapter-seven',
             alignment: 'center',
             hidden: false,
@@ -1472,7 +1542,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Gentrification: Rainier Valley',
-            description: 'One area of Seattle that has significantly been affected by gentrification is the Rainier Valley in the South side of the city. The Rainier Valley was graded as “Definitely Declined” on the 1936 HOLC map, with area descriptions (C13 & C14) labeling it a “very spotted residential district composed of people of various nationalities”. Similarly to the Central District, redlining caused a severe lack of investment in Rainier Valley which has continued to affect its neighborhoods for decades.<br><br>The Rainier Valley also faces another issue which stems from the city expanding its light rail service to the area in the name of “Transit Oriented Development”. This has played into the gentrification of the valley, as the new stations have brought increased development that has significantly changed the character of the neighborhood. In particular, areas around the light rail stations have seen dramatic increases in rent and land values.',
+            description: 'One area of Seattle that has significantly been affected by gentrification is the Rainier Valley in the South end of the city. The Rainier Valley was graded as “Definitely Declined” on the 1936 HOLC map, with area descriptions (C13 & C14) labeling it a “very spotted residential district composed of people of various nationalities”. Similarly to the Central District, redlining caused a severe lack of investment in Rainier Valley which has continued to affect its neighborhoods for decades.<br><br>The Rainier Valley also faces another issue which stems from the city expanding its light rail service to the area in the name of “Transit Oriented Development”. This has played into the gentrification of the valley, as the new stations have brought increased development that has significantly changed the character of the neighborhood. In particular, areas around the light rail stations have seen dramatic increases in rent and land values.',
             image: '',
             location: {
                 center: [-122.23709, 47.53632],
