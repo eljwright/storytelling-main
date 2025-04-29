@@ -17,7 +17,7 @@ var config = {
 
 
     title: 'Redlining Reimagined',
-    subtitle: 'An interactive exploration of redlining discriminatory housing practices in Seattle, Washington and their devastating modern legacies',
+    subtitle: 'An exploration of the discriminatory housing practice of redlining and its devastating modern legacies in Seattle, Washington',
     byline: 'By: Elijah Wright',
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
 
@@ -615,11 +615,81 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Community Resistance',
-            description: 'Before going into detail on the enduring legacy of redlining within Seattle, we will look at the history of legislation and community resistance to redlining <br> Summer of 1963!! (locally and nationally)<br><img src="images/Sit-in_1.jpg" alt="July 1 1963 sit-in" width="50" height="200">',
-            image: '/images/Sit-in_1.jpg',
+            description: 'Before going into detail on the enduring legacy of redlining, let’s look at the history of legislation and community resistance to redlining. Community resistance to housing discrimination in Seattle was led by a combination of national African American civil rights organizations, such as the NAACP and the Urban League, and local grassroot groups like the Central Area Youth Club and Central Seattle Community Council Federation. <br><br>Community resistance to redlining and other forms of housing discrimination (such as restrictive covenants) largely erupted in the 1960s, and specifically the summer of 1963, as the national civil rights movement gained momentum.',
+            image: '',
             location: {
                 center: [-122.32437, 47.60309],
                 zoom: 12.5,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [                {
+                layer: 'Socioecon-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-second-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-middle',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-second-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-lowest',
+                opacity: 0
+            },
+            {
+                layer: 'Racial_georef',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-second-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-middle',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-second-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'Redlining_Georef',
+                opacity: 1,
+            },
+            {
+                layer: 'Racial_Georef',
+                opacity: 0,
+            }],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-six-a',
+            alignment: 'right',
+            hidden: false,
+            title: 'Community Resistance: Sit-Ins',
+            description: 'One form of community resistance that groups took in Seattle were organized sit-ins. The first occurred on <b>July 1st, 1963</b> in the mayor’s office, where 35 members of the Central District Youth Club stayed for 24 hours. Before the sit-in there was a protest outside the building of approximately 300 individuals in support of open housing policy. At this protest they passed around a handbill that stated: <blockquote cite=""https://historylink.org/File/3161"">As citizens of Seattle and members of the Central District Youth Club, we feel humiliated by the slow process of the City of Seattle to adopt open housing. We are past the stage of patience, we also are past the stage of committees and subcommittees. We want open housing today.</blockquote>The second protest of the civil rights movement in Seattle was later that same month, on <b>July 20th, 1963.</b> This in the city council chdemonstration was in protest of the composition of Mayor Clinton’s proposed 12-member human rights commission, which only included two African American nominees. Their sit-in lasted four days and ended in 22 arrests after protesters refused the police order to leave the premises.<img src="Sit-in_2.jpg" alt="image of the July 20th, 1963 sit-in in Seattle">',
+            image: 'Sit-in_1.jpg',
+            location: {
+                center: [-122.33212, 47.60440],
+                zoom: 14.9,
                 pitch: 0,
                 bearing: 0
             },
@@ -1700,7 +1770,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Conclusion & Comprehensive Map Introduction',
-            description: 'The maps, stories, and data we’ve explored tell a clear story:<br><b>Redlining isn’t just a case of historic discrimination but its legacy continues to shape inequality in Seattle today.</b><br><br>Understanding the connections between historic discriminatory practices and modern day inequality gives us a better understanding of how deeply systemic and persistent these issues are. It also gives us the power to challenge them and push for better solutions going forward.<br><br>To continue exploring the legacy of redlining, use the comprehensive map below. This tool lets you compare the original HOLC zones (left) to the RSE Composite index (right), to explore connections of redlining to modern day inequality. Use the map to look at your own neighborhood or explore areas you care about, and consider what this history means for the future of our city.',
+            description: 'The maps, stories, and data we’ve explored tell a clear story:<br><b>Redlining isn’t just a case of historic discrimination but its legacy continues to shape inequality in Seattle today.</b><br><br>Understanding the connections between historic discriminatory practices and modern day inequality gives us a better understanding of how deeply systemic and persistent these issues are. It also gives us the power to challenge them and push for better solutions going forward.<br><br>Now you have the opportunity to continue exploring the legacy of redlining on your own terms. <b>Use the comprehensive map below </b>to compare the original HOLC zones (left) to the RSE Composite Index (right), to explore connections of redlining to modern day inequality. Use the map to look at your own neighborhood or explore areas you care about, and consider what this history means for the future of our city.',
             image: '',
             location: {
                 center: [-122.45885, 47.59481], 
