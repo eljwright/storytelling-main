@@ -554,7 +554,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'HOLC Racial Map',
-            description: 'Another example that showcases the clear racist nature of the redlining map was that in addition to the loan security map, the HOLC also created a racial map that showed the areas certain ethnicities were the most present in. In addition to showing where certain racial groups lived, the HOLC racial map also included arrows that showed the “direction of infiltration” of those groups. This is likely a direct reference to the FHA’s Underwriting Manual which warned housing developers, without sufficient evidence, that property values would be threatened by the “infiltration of inharmonious racial groups”. This map was submitted on the same day and by the same HOLC field agent as the mortgage security redlining map, and is a clear demonstration that the HOLC was always considering racial factors in their maps.<br><br><img class="small_image" src="/images/Racial_Map_Legend.jpg" alt="legend of the HOLC racial map of Seattle">',
+            description: 'Another example that showcases the clear racist nature of the redlining map was that in addition to the loan security map, the HOLC also created a racial map that showed the areas certain ethnicities were the most present in. In addition to showing where certain racial groups lived, the HOLC racial map also included arrows that showed the “direction of infiltration” of those groups. This is likely a direct reference to the FHA’s Underwriting Manual which warned housing developers, without sufficient evidence, that property values would be threatened by the “infiltration of inharmonious racial groups”. This map was submitted on the same day and by the same HOLC field agent as the mortgage security redlining map, and is a clear demonstration that the HOLC was always considering racial factors in their maps.',
             image: '',
             location: {
                 center: [-122.42645, 47.58040], 
@@ -682,14 +682,14 @@ var config = {
         },
         {
             id: 'chapter-six-a',
-            alignment: 'right',
+            alignment: 'center',
             hidden: false,
             title: 'Community Resistance: Sit-Ins',
-            description: 'One form of community resistance that groups took in Seattle were organized sit-ins. The first occurred on <b>July 1st, 1963</b> in the mayor’s office, where 35 members of the Central District Youth Club stayed for 24 hours. Before the sit-in there was a protest outside the building of approximately 300 individuals in support of open housing policy. At this protest they passed around a handbill that stated: <blockquote cite=""https://historylink.org/File/3161"">As citizens of Seattle and members of the Central District Youth Club, we feel humiliated by the slow process of the City of Seattle to adopt open housing. We are past the stage of patience, we also are past the stage of committees and subcommittees. We want open housing today.</blockquote>The second protest of the civil rights movement in Seattle was later that same month, on <b>July 20th, 1963.</b> This in the city council chdemonstration was in protest of the composition of Mayor Clinton’s proposed 12-member human rights commission, which only included two African American nominees. Their sit-in lasted four days and ended in 22 arrests after protesters refused the police order to leave the premises.<img src="Sit-in_2.jpg" alt="image of the July 20th, 1963 sit-in in Seattle">',
-            image: 'Sit-in_1.jpg',
-            location: {
-                center: [-122.33212, 47.60440],
-                zoom: 14.9,
+            description: 'One form of community resistance that groups took in Seattle were organized sit-ins. The first occurred on <b>July 1st, 1963</b> in the mayor’s office, where 35 members of the Central District Youth Club stayed for 24 hours. Before the sit-in there was a protest outside the building of approximately 300 individuals in support of open housing policy. At this protest they passed around a handbill that stated: <blockquote cite=""https://historylink.org/File/3161"">As citizens of Seattle and members of the Central District Youth Club, we feel humiliated by the slow process of the City of Seattle to adopt open housing. We are past the stage of patience, we also are past the stage of committees and subcommittees. We want open housing today.</blockquote>The second protest of the civil rights movement in Seattle was later that same month, on <b>July 20th, 1963.</b> This demonstration in the city council chambers was in protest of the composition of Mayor Clinton’s proposed 12-member human rights commission, which only included two African American nominees. Their sit-in lasted four days and ended in 22 arrests after protesters refused the police order to leave the premises.<br><br><img src="Sit-in_1.jpg" class= "small_image" alt="image of the July 1st, 1963 sit-in in Seattle"><img src="Sit-in_2.jpg" class= "small_image" alt="image of the July 20th, 1963 sit-in in Seattle">',
+            image: '',
+            location:  {
+                center: [-122.32437, 47.60309],
+                zoom: 12.5,
                 pitch: 0,
                 bearing: 0
             },
@@ -752,14 +752,154 @@ var config = {
         },
         {
             id: 'chapter-six-b',
-            alignment: 'right',
+            alignment: 'center',
             hidden: false,
             title: 'Community Resistance: Open Housing Hearing',
-            description: '<b>October 25, 1963</b><br><audio controls><source src="adams_32kbps.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>',
+            description: 'After a long summer of civil rights demonstrations, many of which were about housing discrimination, there was a public open housing hearing on <b>October 25, 2963</b>. At this 7hr hearing, individuals made arguments either for or against open housing legislation. One of these individuals was <b>Rev. John Hurst Adams</b>, chairman of the Central Area Committee on Civil Rights. Adams gave a powerful speech on the unconstitutionality and immorality of housing discrimination:<br><br><audio controls><source src="adams_32kbps.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio><br><br>Although community resistance led to the consideration of open housing legislation, unfortunately this specific ordinance would be defeated by a public vote the following year in March 1964. <br><br><img src="/images/John_Hurst_Adams_2.jpeg" alt= "Image of Rev. John H. Adams"><br>Image of Rev. John H. Adams',
             image: '',
             location: {
-                center: [-122.33212, 47.60440],
-                zoom: 14.9,
+                center: [-122.32437, 47.60309],
+                zoom: 12.5,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [                {
+                layer: 'Socioecon-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-second-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-middle',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-second-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-lowest',
+                opacity: 0
+            },
+            {
+                layer: 'Racial_georef',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-second-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-middle',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-second-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'Redlining_Georef',
+                opacity: 1,
+            },
+            {
+                layer: 'Racial_Georef',
+                opacity: 0,
+            }],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-six-c',
+            alignment: 'center',
+            hidden: false,
+            title: 'Community Resistance: Liberty Bank',
+            description: 'Liberty Bank, at 24th and Union, presents another example of community resistance to housing inequality. The Black-owned bank opened in May of 1968 as a community response to practices of redlining and disinvestment in the Central Seattle area. Liberty Bank offered loans to those individuals that traditional banks would refuse to loan to, representing a clear example of community resistance to redlining, and systemic racism more broadly. Although the bank closed in 1988, today the site has been transformed as an apartment building that provides affordable housing in the hopes of resisting Black displacement in the Central District.<br><br><img src="/images/Liberty_Bank.jpg" class="small_image" alt="image of the outside of Liberty Bank in Seattle"><img src="/images/Liberty_Bank_2.jpg" class="small_image" alt="image of the ribbon cutting of Liberty Bank in Seattle">',
+            image: '',
+            location: {
+                center: [-122.32437, 47.60309],
+                zoom: 12.5,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [                {
+                layer: 'Socioecon-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-second-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-middle',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-second-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'Socioecon-lowest',
+                opacity: 0
+            },
+            {
+                layer: 'Racial_georef',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-second-highest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-middle',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-second-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'RSE-lowest',
+                opacity: 0,
+            },
+            {
+                layer: 'Redlining_Georef',
+                opacity: 1,
+            },
+            {
+                layer: 'Racial_Georef',
+                opacity: 0,
+            }],
+            onChapterExit: [],
+        },
+        {
+            id: 'chapter-six-d',
+            alignment: 'center',
+            hidden: false,
+            title: 'Community Resistance: Redlining Demonstration',
+            description: 'In <b>August 1975</b>, just one month after the Central Seattle Community Council Federation published their Redlining and Disinvestment in Central Seattle report, the federation took to the streets to protest the continued impacts of redlining on their community. They visualized these impacts by painting a thick red line down Fourteenth Avenue, which helped people understand that redlining maps were never just imaginary but they had real, material, impacts on their neighborhoods.<br><br><img src="/images/Protesters_see_red.jpg" alt="Image of protesters in the Central District, painting a giant red line down the street">',
+            image: '',
+            location: {
+                center: [-122.32437, 47.60309],
+                zoom: 12.5,
                 pitch: 0,
                 bearing: 0
             },
@@ -825,7 +965,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Legislation and Modern Impacts',
-            description: 'Although redlining was finally outlawed at the federal level and local levels in 1968 with the Fair Housing Act and Fair Housing Ordinance (Ordinance 96619) respectively, elements of the practice persisted for several years. In 1975 the Central Seattle Community Council Federation published a report titled Redlining and Disinvestment in Central Seattle that outlined how even after this legislation, residents of the Central District, a redlined zone, still faced major barriers to receiving home loans. After this report was published, several local government initiatives were undertaken as an attempt to reverse the effects of redlining, these include Seattle’s Reinvestment Task Force (established 1975) and the Lenders Review Board (est 1976). <br>Despite efforts from the city government, redlining still has a mjaor impact on Seattle today. Its legacy can be seen across many areas of inequality, including income, health, education and employment, among many others. In the following sections, we’ll look more closely at how these impacts show up in different parts of the city.<br><br><img class="small_image" src="/images/Lenders_Review_Board.jpg" alt="ad promoting the lenders review board">',
+            description: 'Although redlining was finally outlawed at the federal level and local levels in 1968 with the Fair Housing Act and Fair Housing Ordinance (Ordinance 96619) respectively, elements of the practice persisted for several years. In 1975 the Central Seattle Community Council Federation published a report titled Redlining and Disinvestment in Central Seattle that outlined how even after this legislation, residents of the Central District, a redlined zone, still faced major barriers to receiving home loans. After this report was published, several local government initiatives were undertaken as an attempt to reverse the effects of redlining, these include Seattle’s Reinvestment Task Force (established 1975) and the Lenders Review Board (est 1976). <br>Despite efforts from the city government, redlining still has a mjaor impact on Seattle today. Its legacy can be seen across many areas of inequality, including income, health, education and employment, among many others. In the following sections, we’ll look more closely at how these impacts show up in different parts of the city.<br><br><img src="/images/Lenders_Review_Board.jpg" class= "small_image" alt="Newspaper ad about the lenders review board">',
             image: '',
             location: {
                 center: [-122.32437, 47.60309],
