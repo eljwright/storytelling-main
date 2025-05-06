@@ -612,7 +612,7 @@ var config = {
         },
         {
             id: 'chapter-six',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             title: 'Community Resistance',
             description: 'Before going into detail on the enduring legacy of redlining, let’s look at the history of legislation and community resistance to redlining. Community resistance to housing discrimination in Seattle was led by a combination of national African American civil rights organizations, such as the NAACP and the Urban League, and local grassroot groups like the Central Area Youth Club and Central Seattle Community Council Federation. <br><br>Community resistance to redlining and other forms of housing discrimination (such as restrictive covenants) largely erupted in the 1960s, and specifically the summer of 1963, as the national civil rights movement gained momentum.',
@@ -626,7 +626,12 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [                {
+            onChapterEnter: [      
+            {
+                layer: 'redlining-markers',
+                opacity: 1,
+            },
+            {
                 layer: 'Socioecon-highest',
                 opacity: 0,
             },
@@ -976,7 +981,12 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [                {
+            onChapterEnter: [                
+            {
+                layer: 'redlining-markers',
+                opacity: 0,
+            },
+            {
                 layer: 'Socioecon-highest',
                 opacity: 0,
             },
